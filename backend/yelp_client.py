@@ -1,5 +1,3 @@
-import time
-
 import requests
 
 from .config import CITY, USER_AGENT, YELP_API_KEY
@@ -7,23 +5,24 @@ from .config import CITY, USER_AGENT, YELP_API_KEY
 SEARCH_URL = "https://api.yelp.com/v3/businesses/search"
 
 
-def search_business(name: str) -> dict | None:
-    """Best-effort Yelp match for a restaurant name in San Diego."""
+def search_business(name: str, yelp_category: str | None = None) -> dict | None:
+    """Best-effort Yelp match for a business name in San Diego."""
     if not YELP_API_KEY:
         return None
+    params = {"term": name, "location": CITY, "limit": 1}
+    if yelp_category:
+        params["categories"] = yelp_category
     try:
         resp = requests.get(
             SEARCH_URL,
             headers={"Authorization": f"Bearer {YELP_API_KEY}", "User-Agent": USER_AGENT},
-            params={"term": name, "location": CITY, "limit": 1},
+            params=params,
             timeout=15,
         )
         resp.raise_for_status()
         businesses = resp.json().get("businesses", [])
     except (requests.RequestException, ValueError):
         return None
-    finally:
-        time.sleep(0.2)
 
     if not businesses:
         return None

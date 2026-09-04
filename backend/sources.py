@@ -5,6 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from .config import USER_AGENT
+from .county_permits import classify_kind
 
 THERESANDIEGO_URL = "https://theresandiego.com/new-restaurants-opening-in-san-diego-in-2026/"
 SANDIEGOVILLE_URL = "https://www.sandiegoville.com/2025/12/the-ultimate-guide-to-san-diegos-80.html"
@@ -52,6 +53,13 @@ def scrape_theresandiego() -> list[dict]:
                     after_parts.append(sib.get_text(" ", strip=True))
             blurb = " ".join(p for p in after_parts if p).strip()
             blurb = blurb.lstrip(" -–—").strip()
+            if not neighborhood:
+                # some entries put the neighborhood outside <strong>, as a
+                # short leading "Neighborhood – " fragment before the blurb
+                dash_parts = _DASH_SPLIT.split(blurb, maxsplit=1)
+                if len(dash_parts) == 2 and len(dash_parts[0]) < 40:
+                    neighborhood = dash_parts[0].strip()
+                    blurb = dash_parts[1].strip()
             link = strong.find("a")
             results.append(
                 {
@@ -61,6 +69,7 @@ def scrape_theresandiego() -> list[dict]:
                     "month": current_month,
                     "source": "theresandiego",
                     "source_url": link["href"] if link and link.get("href") else THERESANDIEGO_URL,
+                    "kind": classify_kind(name),
                 }
             )
     return results
@@ -99,6 +108,7 @@ def scrape_sandiegoville() -> list[dict]:
                 "month": None,
                 "source": "sandiegoville",
                 "source_url": m.group(1),
+                "kind": classify_kind(name),
             }
         )
     return results

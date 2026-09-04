@@ -7,3 +7,6 @@ Scripts/
 Lib/
 Include/
 pyvenv.cfg
+node_modules/
+api-server/.env
+.vercel/

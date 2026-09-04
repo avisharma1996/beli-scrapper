@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>San Diego Restaurant Rankings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>San Diego Food &amp; Drink Rankings</h1>
+    <p class="subtitle" id="category-subtitle">Loading&hellip;</p>
+    <p class="generated-at" id="generated-at"></p>
+  </header>
+
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Category"></nav>
+
+  <main>
+    <div id="status" class="status">Loading rankings&hellip;</div>
+    <ol id="restaurant-list" class="restaurant-list" hidden></ol>
+    <p id="bench-note" class="bench-note" hidden></p>
+  </main>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <footer class="site-footer">
+    <p>
+      Sources: <a href="https://theresandiego.com/new-restaurants-opening-in-san-diego-in-2026/" target="_blank" rel="noopener">There's San Diego</a>
+      &middot;
+      <a href="https://www.sandiegoville.com/" target="_blank" rel="noopener">SanDiegoVille</a>
+      &middot;
+      <a href="https://data.sandiegocounty.gov/Health/Food-Facility-Permits/c5ez-ufrd" target="_blank" rel="noopener">SD County Food Facility Permits</a>
+      &middot;
+      <a href="https://www.yelp.com/" target="_blank" rel="noopener">Yelp</a>
+    </p>
+    <p>Refreshed automatically on a schedule via GitHub Actions.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
