@@ -49,6 +49,21 @@ Each entry is scored 0-100 from a category-appropriate mix of:
 
 See the `WEIGHTS` dict in [backend/rank.py](backend/rank.py) for exact numbers.
 
+Only places rated 4.0+ on every platform that has rated them (and rated by
+*at least one* platform) make the list -- see `MIN_RATING` in
+[backend/config.py](backend/config.py). Chain locations (the county permit
+inventory gives each one its own row, store number and all) are capped at
+one per chain, keeping the best-scoring location -- see `chain_key()` in
+[backend/rank.py](backend/rank.py).
+
+Yelp's free tier is a modest **monthly** call budget, not daily, and easy to
+exceed since a full run enriches every permit candidate. Results are cached
+to `backend/yelp_cache.json` (committed by the workflow, like
+`docs/data.json`) and reused for `YELP_CACHE_TTL_DAYS` (30) before
+re-querying -- see [backend/yelp_cache.py](backend/yelp_cache.py). A failed
+call (rate limited, network error) is never cached as "no match", so it
+retries next run instead of getting stuck.
+
 ## Local setup
 
 ```

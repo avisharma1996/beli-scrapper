@@ -5,8 +5,19 @@ from .config import CITY, USER_AGENT, YELP_API_KEY
 SEARCH_URL = "https://api.yelp.com/v3/businesses/search"
 
 
+class YelpUnavailable(Exception):
+    """The API call itself failed (network error, rate limiting, etc.) --
+    distinct from a successful call that genuinely found no match, so
+    callers (see yelp_cache) don't cache a failure as "no match"."""
+
+
 def search_business(name: str, yelp_category: str | None = None) -> dict | None:
-    """Best-effort Yelp match for a business name in San Diego."""
+    """Best-effort Yelp match for a business name in San Diego.
+
+    Raises YelpUnavailable if the call itself failed. Returns None only
+    when Yelp was reachable and genuinely has no match (or no API key is
+    configured).
+    """
     if not YELP_API_KEY:
         return None
     params = {"term": name, "location": CITY, "limit": 1}
@@ -21,8 +32,8 @@ def search_business(name: str, yelp_category: str | None = None) -> dict | None:
         )
         resp.raise_for_status()
         businesses = resp.json().get("businesses", [])
-    except (requests.RequestException, ValueError):
-        return None
+    except (requests.RequestException, ValueError) as err:
+        raise YelpUnavailable(str(err)) from err
 
     if not businesses:
         return None

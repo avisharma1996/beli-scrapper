@@ -3,8 +3,8 @@ import math
 import re
 from concurrent.futures import ThreadPoolExecutor
 
-from . import google_client, yelp_client
-from .config import CATEGORIES, MIN_RATING, NEW_WINDOW_DAYS, OUTPUT_N
+from . import google_client, yelp_cache, yelp_client
+from .config import CATEGORIES, MIN_RATING, NEW_WINDOW_DAYS, OUTPUT_N, YELP_API_KEY
 
 ENRICHMENT_WORKERS = 10
 
@@ -12,7 +12,9 @@ ENRICHMENT_WORKERS = 10
 # category pools (esp. coffee/bakeries, sourced from the full county permit
 # inventory) can run into the hundreds of candidates. So Google is only
 # spent on a shortlist -- the top N by a Yelp-only preliminary score -- not
-# every candidate. Yelp itself is free, so it enriches everyone.
+# every candidate. Yelp has its own modest monthly call budget too (not
+# unlimited), so it's enriched for everyone but through yelp_cache -- see
+# _fetch_all_yelp below -- rather than re-queried fresh every run.
 GOOGLE_SHORTLIST_N = 20
 
 _PUNCT_RE = re.compile(r"[^a-z0-9 ]")
@@ -216,10 +218,44 @@ def _score(mode: str, agg: dict, yelp: dict | None, google: dict | None, permit:
     return round(score, 2)
 
 
-def _fetch_yelp(item: tuple[str, dict], yelp_category: str) -> tuple[str, dict, dict | None]:
+def _fetch_yelp(item: tuple[str, dict], yelp_category: str) -> tuple[str, dict, dict | None, bool]:
+    """Returns (key, agg, yelp, ok). ok=False means the call itself failed
+    (network error, rate limiting) -- the caller must not cache that as
+    "no match"."""
     key, agg = item
-    yelp = yelp_client.search_business(agg["name"], yelp_category=yelp_category)
-    return key, agg, yelp
+    try:
+        yelp = yelp_client.search_business(agg["name"], yelp_category=yelp_category)
+        return key, agg, yelp, True
+    except yelp_client.YelpUnavailable:
+        return key, agg, None, False
+
+
+def _fetch_all_yelp(merged: dict[str, dict], yelp_category: str) -> list[tuple[str, dict, dict | None]]:
+    """Yelp-enriches every merged candidate, reusing cached results (see
+    yelp_cache) instead of re-querying businesses already looked up within
+    YELP_CACHE_TTL_DAYS -- Yelp's free tier is a modest monthly call budget,
+    not unlimited, and a full run can have thousands of candidates."""
+    cache = yelp_cache.load()
+    results: list[tuple[str, dict, dict | None]] = []
+    to_fetch: list[tuple[str, dict]] = []
+    for key, agg in merged.items():
+        cached = yelp_cache.get(cache, key)
+        if cached is yelp_cache.MISSING:
+            to_fetch.append((key, agg))
+        else:
+            results.append((key, agg, cached))
+
+    if to_fetch:
+        with ThreadPoolExecutor(max_workers=ENRICHMENT_WORKERS) as pool:
+            fetched = list(pool.map(lambda item: _fetch_yelp(item, yelp_category), to_fetch))
+        for key, agg, yelp, ok in fetched:
+            if ok and YELP_API_KEY:
+                yelp_cache.set(cache, key, yelp)
+            results.append((key, agg, yelp))
+        if YELP_API_KEY:
+            yelp_cache.save(cache)
+
+    return results
 
 
 def _fetch_google(entry: dict) -> dict | None:
@@ -241,8 +277,7 @@ def build_ranking(category: str, raw_entries: list[dict], permit_lookup: dict[st
             if _within_new_window(_parse_month_label(v["months"][0] if v["months"] else None))
         }
 
-    with ThreadPoolExecutor(max_workers=ENRICHMENT_WORKERS) as pool:
-        yelp_results = pool.map(lambda item: _fetch_yelp(item, yelp_category), merged.items())
+    yelp_results = _fetch_all_yelp(merged, yelp_category)
 
     entries = []
     for key, agg, yelp in yelp_results:

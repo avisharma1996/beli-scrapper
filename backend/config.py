@@ -28,6 +28,12 @@ NEW_WINDOW_DAYS = 180  # "new" restaurants must have opened within this window
 # rating in the weighted score.
 MIN_RATING = 4.0
 
+# Yelp's free tier is a modest monthly call budget (not daily), and a full
+# run Yelp-enriches every permit candidate (up to MAX_PERMIT_CANDIDATES per
+# "top rated" kind) -- so results are cached to backend/yelp_cache.json and
+# reused across runs instead of re-querying every business every week.
+YELP_CACHE_TTL_DAYS = 30
+
 # The county's active-restaurant permit pool alone runs ~3,800+ candidates --
 # enriching all of them via Yelp/Google every run isn't practical. Cap how
 # many get sampled per "top_rated" kind each run (random sample, not a fixed
