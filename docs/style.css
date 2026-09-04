@@ -37,10 +37,126 @@ body {
 }
 
 .site-header {
+  position: relative;
   max-width: 780px;
   margin: 0 auto;
   padding: 3rem 1.25rem 1.5rem;
   text-align: center;
+}
+
+.sync-btn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.sync-btn:hover {
+  color: var(--text);
+}
+
+.sync-panel {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  z-index: 20;
+}
+
+.sync-panel-inner {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  max-width: 420px;
+  width: 100%;
+}
+
+.sync-panel-inner h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.6rem;
+}
+
+.sync-help {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+}
+
+.sync-help a {
+  color: var(--accent);
+}
+
+.sync-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+}
+
+.sync-optional {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.sync-input {
+  display: block;
+  width: 100%;
+  margin-top: 0.35rem;
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+}
+
+.sync-status {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  min-height: 1.2em;
+  margin: 0 0 0.9rem;
+}
+
+.sync-actions {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: flex-end;
+}
+
+.sync-primary,
+.sync-secondary {
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  border: 1px solid var(--border);
+}
+
+.sync-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.sync-secondary {
+  background: var(--surface);
+  color: var(--text-muted);
 }
 
 .site-header h1 {

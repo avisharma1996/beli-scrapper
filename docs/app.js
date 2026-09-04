@@ -1,11 +1,15 @@
-// Set after deploying api-server/ to Vercel (see README). APP_SECRET must
-// match the APP_SHARED_SECRET env var set on that Vercel project. Leaving
-// API_BASE empty falls back to browser-only (localStorage) persistence.
-const API_BASE = "http://localhost:3001";
-const APP_SECRET = "quQ-gDF2QWKkrpRGRZ4qC5xTIac1LViW";
-
 const DISPLAY_N = 20;
 const LOCAL_STORAGE_KEY = "sd-rankings-tried";
+
+// Cross-device sync uses a private GitHub Gist as storage, authenticated
+// with a personal access token the user creates (scope: "gist" only) and
+// pastes into the Sync panel -- see index.html. The token lives in
+// localStorage on each device; that's a deterrent, not real security (same
+// caveat as any client-side secret), but this is a single-user personal
+// list, so it's fine.
+const GH_TOKEN_KEY = "sd-rankings-gh-token";
+const GH_GIST_ID_KEY = "sd-rankings-gist-id";
+const GIST_FILENAME = "tried.json";
 
 let DATA = null;
 let ACTIVE_CATEGORY = null;
@@ -38,12 +42,61 @@ function saveLocalTried() {
   }
 }
 
+function getSyncConfig() {
+  return {
+    token: localStorage.getItem(GH_TOKEN_KEY) || "",
+    gistId: localStorage.getItem(GH_GIST_ID_KEY) || "",
+  };
+}
+
+function setSyncConfig(token, gistId) {
+  if (token) localStorage.setItem(GH_TOKEN_KEY, token);
+  else localStorage.removeItem(GH_TOKEN_KEY);
+  if (gistId) localStorage.setItem(GH_GIST_ID_KEY, gistId);
+  else localStorage.removeItem(GH_GIST_ID_KEY);
+}
+
+async function ghRequest(path, options) {
+  const { token } = getSyncConfig();
+  const res = await fetch(`https://api.github.com${path}`, {
+    ...options,
+    headers: {
+      Authorization: `token ${token}`,
+      Accept: "application/vnd.github+json",
+      ...(options && options.headers),
+    },
+  });
+  if (!res.ok) throw new Error(`GitHub API HTTP ${res.status}`);
+  return res.json();
+}
+
+// Creates the sync gist on first use (first device to save a token with no
+// gist ID yet) and stores its ID so later persistTried calls reuse it.
+// Other devices get the same ID by pasting it into the Sync panel.
+async function ensureGist() {
+  const { token, gistId } = getSyncConfig();
+  if (!token) return null;
+  if (gistId) return gistId;
+  const gist = await ghRequest("/gists", {
+    method: "POST",
+    body: JSON.stringify({
+      description: "beli-scrapper tried list (do not share this link)",
+      public: false,
+      files: { [GIST_FILENAME]: { content: JSON.stringify({}) } },
+    }),
+  });
+  setSyncConfig(token, gist.id);
+  return gist.id;
+}
+
 async function loadRemoteTried() {
-  if (!API_BASE) return null;
+  const { token, gistId } = getSyncConfig();
+  if (!token || !gistId) return null;
   try {
-    const res = await fetch(`${API_BASE}/api/tried`, { cache: "no-store" });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const remote = await res.json();
+    const gist = await ghRequest(`/gists/${gistId}`);
+    const file = gist.files && gist.files[GIST_FILENAME];
+    if (!file) return null;
+    const remote = JSON.parse(file.content);
     const result = {};
     for (const [cat, ids] of Object.entries(remote)) {
       result[cat] = new Set(ids);
@@ -54,20 +107,97 @@ async function loadRemoteTried() {
   }
 }
 
-async function persistTried(category, id, tried) {
+async function persistTried() {
   saveLocalTried();
-  if (!API_BASE) return;
+  const { token } = getSyncConfig();
+  if (!token) return;
   try {
-    await fetch(`${API_BASE}/api/tried`, {
-      method: tried ? "POST" : "DELETE",
-      headers: { "Content-Type": "application/json", "x-app-secret": APP_SECRET },
-      body: JSON.stringify({ category, id }),
+    const gistId = await ensureGist();
+    if (!gistId) return;
+    await ghRequest(`/gists/${gistId}`, {
+      method: "PATCH",
+      body: JSON.stringify({
+        files: { [GIST_FILENAME]: { content: JSON.stringify(triedToPlain()) } },
+      }),
     });
   } catch (err) {
-    // offline or API down -- local state (already saved) still reflects
-    // the change; it'll drift back into sync next time loadRemoteTried
-    // succeeds and this device re-marks anything missing server-side
+    // offline or token revoked -- local state (already saved) still
+    // reflects the change; it'll drift back into sync next time
+    // loadRemoteTried succeeds and this device re-persists
   }
+}
+
+function triedToPlain() {
+  const plain = {};
+  for (const [cat, ids] of Object.entries(TRIED)) {
+    plain[cat] = Array.from(ids);
+  }
+  return plain;
+}
+
+function updateSyncStatus(message) {
+  const statusEl = document.getElementById("sync-status");
+  if (!statusEl) return;
+  if (message) {
+    statusEl.textContent = message;
+    return;
+  }
+  const { token, gistId } = getSyncConfig();
+  statusEl.textContent = token && gistId ? "Synced across devices." : "Not set up -- only saved on this device.";
+}
+
+function setupSyncPanel() {
+  const btn = document.getElementById("sync-btn");
+  const panel = document.getElementById("sync-panel");
+  const tokenInput = document.getElementById("sync-token");
+  const gistInput = document.getElementById("sync-gist-id");
+  const saveBtn = document.getElementById("sync-save");
+  const closeBtn = document.getElementById("sync-close");
+
+  const openPanel = () => {
+    const { token, gistId } = getSyncConfig();
+    tokenInput.value = token;
+    gistInput.value = gistId;
+    updateSyncStatus();
+    panel.hidden = false;
+  };
+  const closePanel = () => {
+    panel.hidden = true;
+  };
+
+  btn.addEventListener("click", openPanel);
+  closeBtn.addEventListener("click", closePanel);
+  panel.addEventListener("click", (e) => {
+    if (e.target === panel) closePanel();
+  });
+
+  saveBtn.addEventListener("click", async () => {
+    const token = tokenInput.value.trim();
+    const gistId = gistInput.value.trim();
+    setSyncConfig(token, gistId);
+    if (!token) {
+      updateSyncStatus();
+      return;
+    }
+    updateSyncStatus("Connecting...");
+    try {
+      const id = await ensureGist();
+      gistInput.value = id;
+      const remote = await loadRemoteTried();
+      if (remote) {
+        for (const [cat, ids] of Object.entries(remote)) {
+          if (!TRIED[cat]) TRIED[cat] = new Set();
+          for (const rid of ids) TRIED[cat].add(rid);
+        }
+        saveLocalTried();
+        renderList();
+      }
+      await persistTried();
+      updateSyncStatus("Synced across devices.");
+    } catch (err) {
+      updateSyncStatus("Couldn't connect -- check the token and try again.");
+    }
+  });
 }
 
 async function main() {
@@ -76,6 +206,7 @@ async function main() {
   const generatedEl = document.getElementById("generated-at");
   const tabsEl = document.getElementById("tabs");
 
+  setupSyncPanel();
   TRIED = loadLocalTried();
 
   try {
@@ -176,7 +307,7 @@ function markTried(category, id, tried) {
   const set = triedSetFor(category);
   if (tried) set.add(id);
   else set.delete(id);
-  persistTried(category, id, tried);
+  persistTried();
   renderList();
 }
 

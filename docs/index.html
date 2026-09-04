@@ -8,10 +8,36 @@
 </head>
 <body>
   <header class="site-header">
+    <button id="sync-btn" class="sync-btn" type="button" title="Sync &quot;tried&quot; list across devices">Sync</button>
     <h1>San Diego Food &amp; Drink Rankings</h1>
     <p class="subtitle" id="category-subtitle">Loading&hellip;</p>
     <p class="generated-at" id="generated-at"></p>
   </header>
+
+  <div id="sync-panel" class="sync-panel" hidden>
+    <div class="sync-panel-inner">
+      <h2>Sync "tried" list across devices</h2>
+      <p class="sync-help">
+        Stores your "tried" list in a private GitHub Gist under your own
+        GitHub account -- no new sign-up needed.
+        <a href="https://github.com/settings/tokens/new?description=beli-scrapper%20tried%20sync&scopes=gist" target="_blank" rel="noopener">Create a token</a>
+        with only the <strong>gist</strong> scope checked, then paste it below.
+      </p>
+      <label class="sync-label">
+        Personal access token
+        <input id="sync-token" class="sync-input" type="password" autocomplete="off" placeholder="github_pat_..." />
+      </label>
+      <label class="sync-label">
+        Gist ID <span class="sync-optional">(leave blank on your first device)</span>
+        <input id="sync-gist-id" class="sync-input" type="text" autocomplete="off" placeholder="auto-created on save" />
+      </label>
+      <p id="sync-status" class="sync-status"></p>
+      <div class="sync-actions">
+        <button id="sync-save" class="sync-primary" type="button">Save &amp; sync</button>
+        <button id="sync-close" class="sync-secondary" type="button">Close</button>
+      </div>
+    </div>
+  </div>
 
   <nav class="tabs" id="tabs" role="tablist" aria-label="Category"></nav>
 
