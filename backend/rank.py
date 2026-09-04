@@ -65,23 +65,21 @@ MONTH_NAMES = {
 # buzz/recency carry real weight. "top_rated" mode (coffee, bakeries): there's
 # no reliable newness signal for these, so that budget shifts entirely onto
 # rating/volume and permit becomes a small "verified licensed" trust bonus.
-# Rating + review-volume dominate both modes -- a high-volume-but-mediocre
-# place shouldn't be able to out-buzz or out-permit its way past genuinely
-# well-rated ones. MIN_RATING below is what actually keeps low-rated places
-# (e.g. 2.3 stars) off the list -- reweighting alone can't guarantee that
-# since a high review count can still offset a middling rating in a linear
-# score.
+# "yelp"/"google" here are each a single _rating_score() -- rating with
+# review count as a same-tier tiebreaker only (see _VOLUME_TIEBREAK_WEIGHT),
+# not two independently-weighted terms -- so a high-volume-but-mediocre
+# place can't out-review its way past a genuinely well-rated one no matter
+# how these weights are tuned. MIN_RATING is what keeps outright low-rated
+# places (e.g. 2.3 stars) off the list entirely.
 WEIGHTS = {
     "new": {
         "buzz": 15, "recency": 15,
-        "yelp_rating": 20, "yelp_volume": 20,
-        "google_rating": 10, "google_volume": 10,
+        "yelp": 40, "google": 20,
         "permit": 10,
     },
     "top_rated": {
         "buzz": 0, "recency": 0,
-        "yelp_rating": 35, "yelp_volume": 35,
-        "google_rating": 12, "google_volume": 12,
+        "yelp": 70, "google": 24,
         "permit": 6,
     },
 }
@@ -191,10 +189,25 @@ def merge_entries(raw_entries: list[dict]) -> dict[str, dict]:
     return merged
 
 
-def _rating_volume(rating: float | None, review_count: int | None, volume_ceiling: int) -> tuple[float, float]:
-    rating_component = (rating / 5) if rating is not None else 0.0
+# A 0.1-star rating difference is the smallest one that's ever meaningfully
+# real (both platforms report to ~1 decimal place); a full "tier" here is
+# 0.1/5 = 0.02 in the normalized [0,1] space _rating_score works in. Review
+# count's contribution is capped at half that, so it can only ever break a
+# tie *within* the same rounded rating -- it can never outweigh even the
+# smallest genuine rating difference, no matter how it's weighted.
+_VOLUME_TIEBREAK_WEIGHT = 0.01
+
+
+def _rating_score(rating: float | None, review_count: int | None, volume_ceiling: int) -> float:
+    """0-1 score where rating strictly dominates review count -- see
+    _VOLUME_TIEBREAK_WEIGHT. A 4.9-rated place with 5 reviews always beats a
+    4.4-rated place with 5,000; count only matters between otherwise-tied
+    (same rounded rating) places."""
+    if rating is None:
+        return 0.0
+    tier = round(rating, 1) / 5
     volume_component = min(1.0, math.log1p(review_count or 0) / math.log1p(volume_ceiling))
-    return rating_component, volume_component
+    return tier + volume_component * _VOLUME_TIEBREAK_WEIGHT
 
 
 def _score(mode: str, agg: dict, yelp: dict | None, google: dict | None, permit: dict | None) -> float:
@@ -206,10 +219,8 @@ def _score(mode: str, agg: dict, yelp: dict | None, google: dict | None, permit:
     month_label = agg["months"][0] if agg["months"] else None
     recency = _recency_score(_parse_month_label(month_label))
 
-    yelp_rating, yelp_volume = _rating_volume(
-        yelp.get("rating") if yelp else None, yelp.get("review_count") if yelp else None, 200
-    )
-    google_rating, google_volume = _rating_volume(
+    yelp_score = _rating_score(yelp.get("rating") if yelp else None, yelp.get("review_count") if yelp else None, 200)
+    google_score = _rating_score(
         google.get("rating") if google else None, google.get("review_count") if google else None, 200
     )
 
@@ -218,10 +229,8 @@ def _score(mode: str, agg: dict, yelp: dict | None, google: dict | None, permit:
     score = (
         w["buzz"] * buzz
         + w["recency"] * recency
-        + w["yelp_rating"] * yelp_rating
-        + w["yelp_volume"] * yelp_volume
-        + w["google_rating"] * google_rating
-        + w["google_volume"] * google_volume
+        + w["yelp"] * yelp_score
+        + w["google"] * google_score
         + w["permit"] * permit_component
     )
     return round(score, 2)
