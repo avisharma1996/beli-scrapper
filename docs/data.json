@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T04:17:10.957546+00:00",
+  "generated_at": "2026-09-04T16:52:59.106854+00:00",
   "categories": {
     "new_restaurants": {
       "label": "New Restaurants",
@@ -31,7 +31,7 @@
             "address": "1212 CAMINO DEL MAR",
             "status": "Permit Renewed"
           },
-          "score": 49.0,
+          "score": 43.94,
           "rank": 1
         },
         {
@@ -57,36 +57,8 @@
             "url": "https://maps.google.com/?cid=8225907324179040669&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": null,
-          "score": 46.17,
+          "score": 38.81,
           "rank": 2
-        },
-        {
-          "id": "candy land",
-          "name": "Candy Land",
-          "neighborhood": "",
-          "blurb": "Caf\u00e9",
-          "month": "July 2026",
-          "sources": [
-            {
-              "name": "theresandiego",
-              "url": "https://theresandiego.com/new-restaurants-opening-in-san-diego-in-2026/"
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 2.3,
-            "review_count": 40,
-            "url": "https://maps.google.com/?cid=7853179735249252273&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "CANDY LAND",
-            "kind": "restaurant",
-            "city": "ESCONDIDO",
-            "address": "356 W VALLEY PKWY",
-            "status": "Permit Renewed"
-          },
-          "score": 44.1,
-          "rank": 3
         },
         {
           "id": "verise",
@@ -103,7 +75,7 @@
           "yelp": null,
           "google": {
             "rating": 4.4,
-            "review_count": 56,
+            "review_count": 57,
             "url": "https://maps.google.com/?cid=12653646455053338343&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
@@ -113,8 +85,8 @@
             "address": "5420 GRAND PACIFIC DR",
             "status": "Permit Renewed"
           },
-          "score": 41.34,
-          "rank": 4
+          "score": 37.58,
+          "rank": 3
         },
         {
           "id": "rei do gado",
@@ -135,8 +107,8 @@
             "url": "https://maps.google.com/?cid=8525605248498358639&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": null,
-          "score": 41.3,
-          "rank": 5
+          "score": 35.61,
+          "rank": 4
         },
         {
           "id": "copper kings burgers",
@@ -161,7 +133,29 @@
             "url": "https://maps.google.com/?cid=9109581548291048867&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": null,
-          "score": 40.78,
+          "score": 35.33,
+          "rank": 5
+        },
+        {
+          "id": "maranello",
+          "name": "Maranello",
+          "neighborhood": "",
+          "blurb": "",
+          "month": "July 2026",
+          "sources": [
+            {
+              "name": "theresandiego",
+              "url": "https://theresandiego.com/new-restaurants-opening-in-san-diego-in-2026/"
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.9,
+            "review_count": 62,
+            "url": "https://maps.google.com/?cid=17670760349524071071&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": null,
+          "score": 34.42,
           "rank": 6
         },
         {
@@ -187,30 +181,8 @@
             "url": "https://maps.google.com/?cid=4781842281258539339&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": null,
-          "score": 40.22,
+          "score": 34.14,
           "rank": 7
-        },
-        {
-          "id": "maranello",
-          "name": "Maranello",
-          "neighborhood": "",
-          "blurb": "",
-          "month": "July 2026",
-          "sources": [
-            {
-              "name": "theresandiego",
-              "url": "https://theresandiego.com/new-restaurants-opening-in-san-diego-in-2026/"
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 4.9,
-            "review_count": 62,
-            "url": "https://maps.google.com/?cid=17670760349524071071&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": null,
-          "score": 40.11,
-          "rank": 8
         },
         {
           "id": "zuma",
@@ -231,8 +203,8 @@
             "url": "https://maps.google.com/?cid=14939308032706139918&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": null,
-          "score": 39.43,
-          "rank": 9
+          "score": 33.74,
+          "rank": 8
         },
         {
           "id": "tierra y mar",
@@ -253,8 +225,8 @@
             "url": "https://maps.google.com/?cid=6181168881293277341&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": null,
-          "score": 38.81,
-          "rank": 10
+          "score": 33.12,
+          "rank": 9
         },
         {
           "id": "sun gold point",
@@ -271,11 +243,33 @@
           "yelp": null,
           "google": {
             "rating": 4.5,
-            "review_count": 42,
+            "review_count": 45,
             "url": "https://maps.google.com/?cid=4296688014139876329&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": null,
-          "score": 38.59,
+          "score": 33.03,
+          "rank": 10
+        },
+        {
+          "id": "queenstown",
+          "name": "Queenstown",
+          "neighborhood": "Del Mar",
+          "blurb": "New Zealand-influenced comfort food and cocktails on Camino Del Mar from the team behind Bare Back Grill and Raglan Public House. The glass pavilion with ocean views and indoor-outdoor seating is the detail worth watching for.",
+          "month": "May 2026",
+          "sources": [
+            {
+              "name": "theresandiego",
+              "url": "https://queenstownpublichouse.com/"
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.5,
+            "review_count": 3054,
+            "url": "https://maps.google.com/?cid=5201331742307147740&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": null,
+          "score": 32.0,
           "rank": 11
         },
         {
@@ -297,7 +291,7 @@
             "url": "https://maps.google.com/?cid=13491628563271488354&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": null,
-          "score": 37.09,
+          "score": 31.41,
           "rank": 12
         },
         {
@@ -319,29 +313,29 @@
             "url": "https://maps.google.com/?cid=9300948537906987924&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": null,
-          "score": 36.42,
+          "score": 31.36,
           "rank": 13
         },
         {
-          "id": "queenstown",
-          "name": "Queenstown",
-          "neighborhood": "Del Mar",
-          "blurb": "New Zealand-influenced comfort food and cocktails on Camino Del Mar from the team behind Bare Back Grill and Raglan Public House. The glass pavilion with ocean views and indoor-outdoor seating is the detail worth watching for.",
-          "month": "May 2026",
+          "id": "pastaria vivi",
+          "name": "Pastaria Vivi",
+          "neighborhood": "Encinitas",
+          "blurb": "Pastaria Vivi brings a fresh take on Italian dining to Encinitas, blending handmade pasta, a retail shop, and casual dining. With 75+ rotating combinations, curated wines, and classes, it\u2019s a go-to spot for both dining in and cooking at home. Opens April 11.",
+          "month": "April 2026",
           "sources": [
             {
               "name": "theresandiego",
-              "url": "https://queenstownpublichouse.com/"
+              "url": "https://www.pastariavivi.com/"
             }
           ],
           "yelp": null,
           "google": {
-            "rating": 4.5,
-            "review_count": 3054,
-            "url": "https://maps.google.com/?cid=5201331742307147740&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "rating": 4.9,
+            "review_count": 103,
+            "url": "https://maps.google.com/?cid=6639360876511160926&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": null,
-          "score": 36.42,
+          "score": 29.68,
           "rank": 14
         },
         {
@@ -363,30 +357,8 @@
             "url": "https://maps.google.com/?cid=15932274850063254867&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": null,
-          "score": 34.14,
+          "score": 29.08,
           "rank": 15
-        },
-        {
-          "id": "pastaria vivi",
-          "name": "Pastaria Vivi",
-          "neighborhood": "Encinitas",
-          "blurb": "Pastaria Vivi brings a fresh take on Italian dining to Encinitas, blending handmade pasta, a retail shop, and casual dining. With 75+ rotating combinations, curated wines, and classes, it\u2019s a go-to spot for both dining in and cooking at home. Opens April 11.",
-          "month": "April 2026",
-          "sources": [
-            {
-              "name": "theresandiego",
-              "url": "https://www.pastariavivi.com/"
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 4.9,
-            "review_count": 103,
-            "url": "https://maps.google.com/?cid=6639360876511160926&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": null,
-          "score": 33.47,
-          "rank": 16
         },
         {
           "id": "anigma",
@@ -407,8 +379,8 @@
             "url": "https://maps.google.com/?cid=7658487479066583664&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": null,
-          "score": 33.24,
-          "rank": 17
+          "score": 28.17,
+          "rank": 16
         },
         {
           "id": "georgette s",
@@ -429,8 +401,8 @@
             "url": "https://maps.google.com/?cid=9305251520414238819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": null,
-          "score": 28.26,
-          "rank": 18
+          "score": 24.47,
+          "rank": 17
         },
         {
           "id": "ikaria",
@@ -451,8 +423,8 @@
             "url": "https://maps.google.com/?cid=6331589337851049780&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": null,
-          "score": 22.5,
-          "rank": 19
+          "score": 16.81,
+          "rank": 18
         },
         {
           "id": "drums beatstro jawn",
@@ -473,8 +445,8 @@
             "url": "https://maps.google.com/?cid=1484228918149831624&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": null,
-          "score": 20.0,
-          "rank": 20
+          "score": 14.94,
+          "rank": 19
         }
       ]
     },
@@ -484,9 +456,9 @@
       "methodology": "Ranked by Yelp/Google rating and review volume.",
       "restaurants": [
         {
-          "id": "ottavios italian restaurant",
-          "name": "OTTAVIOS ITALIAN RESTAURANT",
-          "neighborhood": "LAKESIDE",
+          "id": "liv juice bar and smoothies",
+          "name": "LIV JUICE BAR AND SMOOTHIES",
+          "neighborhood": "SAN DIEGO",
           "blurb": "",
           "month": null,
           "sources": [
@@ -498,22 +470,22 @@
           "yelp": null,
           "google": {
             "rating": 4.7,
-            "review_count": 1224,
-            "url": "https://maps.google.com/?cid=6694914957036854114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "review_count": 429,
+            "url": "https://maps.google.com/?cid=6351851408011495562&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "OTTAVIOS ITALIAN RESTAURANT",
+            "name": "LIV JUICE BAR AND SMOOTHIES",
             "kind": "restaurant",
-            "city": "LAKESIDE",
-            "address": "12440 WOODSIDE AVE",
+            "city": "SAN DIEGO",
+            "address": "1251 E UNIVERSITY AVE",
             "status": "Permit Renewed"
           },
-          "score": 39.1,
+          "score": 29.28,
           "rank": 1
         },
         {
-          "id": "panaderia y pizeria gonzalez",
-          "name": "PANADERIA Y PIZERIA GONZALEZ",
+          "id": "oltre mare",
+          "name": "OLTRE MARE",
           "neighborhood": "SAN DIEGO",
           "blurb": "",
           "month": null,
@@ -526,51 +498,23 @@
           "yelp": null,
           "google": {
             "rating": 4.7,
-            "review_count": 289,
-            "url": "https://maps.google.com/?cid=2795781880681802192&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "review_count": 538,
+            "url": "https://maps.google.com/?cid=11609770079197701357&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "PANADERIA Y PIZERIA GONZALEZ",
+            "name": "OLTRE MARE",
             "kind": "restaurant",
             "city": "SAN DIEGO",
-            "address": "2947 BEYER BLVD",
+            "address": "4286 CASS ST",
             "status": "Permit Renewed"
           },
-          "score": 39.1,
+          "score": 29.28,
           "rank": 2
         },
         {
-          "id": "c s deli ice cream",
-          "name": "C'S DELI & ICE CREAM",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 4.9,
-            "review_count": 156,
-            "url": "https://maps.google.com/?cid=1038942248422010817&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "C'S DELI & ICE CREAM",
-            "kind": "restaurant",
-            "city": "SAN DIEGO",
-            "address": "9969 MIRA MESA BLVD",
-            "status": "Permit Renewed"
-          },
-          "score": 39.0,
-          "rank": 3
-        },
-        {
-          "id": "eriks deli grill",
-          "name": "ERIKS  DELI & GRILL",
-          "neighborhood": "SAN DIEGO",
+          "id": "antica trattoria",
+          "name": "ANTICA TRATTORIA",
+          "neighborhood": "LA MESA",
           "blurb": "",
           "month": null,
           "sources": [
@@ -582,46 +526,18 @@
           "yelp": null,
           "google": {
             "rating": 4.6,
-            "review_count": 605,
-            "url": "https://maps.google.com/?cid=6437371204123230958&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "review_count": 822,
+            "url": "https://maps.google.com/?cid=5057470392013457101&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "ERIKS  DELI & GRILL",
+            "name": "ANTICA TRATTORIA",
             "kind": "restaurant",
-            "city": "SAN DIEGO",
-            "address": "9660 VIA DE LA AMISTAD",
+            "city": "LA MESA",
+            "address": "5654 LAKE MURRAY BLVD",
             "status": "Permit Renewed"
           },
-          "score": 38.8,
-          "rank": 4
-        },
-        {
-          "id": "silver gate yacht club",
-          "name": "SILVER GATE YACHT CLUB",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 4.8,
-            "review_count": 151,
-            "url": "https://maps.google.com/?cid=187108568301759888&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "SILVER GATE YACHT CLUB",
-            "kind": "restaurant",
-            "city": "SAN DIEGO",
-            "address": "2091 SHELTER ISLAND DR",
-            "status": "Permit Renewed"
-          },
-          "score": 38.61,
-          "rank": 5
+          "score": 29.04,
+          "rank": 3
         },
         {
           "id": "board brew",
@@ -648,8 +564,8 @@
             "address": "1212 CAMINO DEL MAR",
             "status": "Permit Renewed"
           },
-          "score": 38.5,
-          "rank": 6
+          "score": 28.8,
+          "rank": 4
         },
         {
           "id": "puesto",
@@ -676,13 +592,13 @@
             "address": "1026 WALL ST",
             "status": "Permit Renewed"
           },
-          "score": 38.5,
-          "rank": 7
+          "score": 28.8,
+          "rank": 5
         },
         {
-          "id": "fruittitude",
-          "name": "FRUITTITUDE",
-          "neighborhood": "LA JOLLA",
+          "id": "del mar fairgrounds grand stand c4064 riders up",
+          "name": "DEL MAR FAIRGROUNDS - GRAND STAND C4064 - RIDERS UP",
+          "neighborhood": "DEL MAR",
           "blurb": "",
           "month": null,
           "sources": [
@@ -694,18 +610,158 @@
           "yelp": null,
           "google": {
             "rating": 4.5,
-            "review_count": 555,
-            "url": "https://maps.google.com/?cid=3866464570173132748&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "review_count": 6286,
+            "url": "https://maps.google.com/?cid=8504660696595664927&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "FRUITTITUDE",
+            "name": "DEL MAR FAIRGROUNDS - GRAND STAND C4064 - RIDERS UP",
             "kind": "restaurant",
-            "city": "LA JOLLA",
-            "address": "7777 GIRARD AVE",
+            "city": "DEL MAR",
+            "address": "2260 JIMMY DURANTE BLVD",
             "status": "Permit Renewed"
           },
-          "score": 38.5,
+          "score": 28.8,
+          "rank": 6
+        },
+        {
+          "id": "san diego marriott marina exchange",
+          "name": "SAN DIEGO MARRIOTT & MARINA - THE EXCHANGE",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.5,
+            "review_count": 8249,
+            "url": "https://maps.google.com/?cid=7528157530895237542&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": {
+            "name": "SAN DIEGO MARRIOTT & MARINA - THE EXCHANGE",
+            "kind": "restaurant",
+            "city": "SAN DIEGO",
+            "address": "333 W HARBOR DR",
+            "status": "Permit Renewed"
+          },
+          "score": 28.8,
+          "rank": 7
+        },
+        {
+          "id": "mcguffie s llc",
+          "name": "MCGUFFIE'S LLC",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.5,
+            "review_count": 368,
+            "url": "https://maps.google.com/?cid=6363714331986747099&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": {
+            "name": "MCGUFFIE'S LLC",
+            "kind": "restaurant",
+            "city": "SAN DIEGO",
+            "address": "8515 NAVAJO RD",
+            "status": "Permit Renewed"
+          },
+          "score": 28.8,
           "rank": 8
+        },
+        {
+          "id": "rare society",
+          "name": "RARE SOCIETY",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.5,
+            "review_count": 562,
+            "url": "https://maps.google.com/?cid=18413732129652374447&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": {
+            "name": "RARE SOCIETY",
+            "kind": "restaurant",
+            "city": "SAN DIEGO",
+            "address": "4130 PARK BLVD",
+            "status": "Permit Renewed"
+          },
+          "score": 28.8,
+          "rank": 9
+        },
+        {
+          "id": "oumi sushi at sprouts 417",
+          "name": "OUMI SUSHI AT SPROUTS 417",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.5,
+            "review_count": 654,
+            "url": "https://maps.google.com/?cid=11446702406321501939&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": {
+            "name": "OUMI SUSHI AT SPROUTS 417",
+            "kind": "restaurant",
+            "city": "SAN DIEGO",
+            "address": "3015 CLAIREMONT DR",
+            "status": "Permit Renewed"
+          },
+          "score": 28.8,
+          "rank": 10
+        },
+        {
+          "id": "bon appetit",
+          "name": "BON APPETIT",
+          "neighborhood": "OCEANSIDE",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.5,
+            "review_count": 3357,
+            "url": "https://maps.google.com/?cid=7315287364494904596&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": {
+            "name": "BON APPETIT",
+            "kind": "restaurant",
+            "city": "OCEANSIDE",
+            "address": "1 ANTIBODY WAY",
+            "status": "Permit Renewed"
+          },
+          "score": 28.8,
+          "rank": 11
         },
         {
           "id": "dirty birds bar grill",
@@ -717,6 +773,10 @@
             {
               "name": "sandiegoville",
               "url": "https://www.sandiegoville.com/2025/04/dirty-birds-bar-grill-to-open-newest.html"
+            },
+            {
+              "name": "county_permit",
+              "url": null
             }
           ],
           "yelp": null,
@@ -732,36 +792,8 @@
             "address": "6495 EL CAJON BLVD",
             "status": "Permit Renewed"
           },
-          "score": 38.2,
-          "rank": 9
-        },
-        {
-          "id": "royal mandarin",
-          "name": "ROYAL MANDARIN",
-          "neighborhood": "NATIONAL CITY",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 4.4,
-            "review_count": 2606,
-            "url": "https://maps.google.com/?cid=18001621380512851235&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "ROYAL MANDARIN",
-            "kind": "restaurant",
-            "city": "NATIONAL CITY",
-            "address": "1132 E PLAZA BLVD",
-            "status": "Permit Renewed"
-          },
-          "score": 38.2,
-          "rank": 10
+          "score": 28.56,
+          "rank": 12
         },
         {
           "id": "queenstown bistro",
@@ -788,12 +820,12 @@
             "address": "4545 LA JOLLA VILLAGE SUITE CLOCK TOWER DR",
             "status": "Permit Renewed"
           },
-          "score": 37.6,
-          "rank": 11
+          "score": 28.08,
+          "rank": 13
         },
         {
-          "id": "la morena taco shop",
-          "name": "LA MORENA TACO SHOP",
+          "id": "nishiki ramen",
+          "name": "NISHIKI RAMEN",
           "neighborhood": "SAN DIEGO",
           "blurb": "",
           "month": null,
@@ -805,24 +837,24 @@
           ],
           "yelp": null,
           "google": {
-            "rating": 4.4,
-            "review_count": 148,
-            "url": "https://maps.google.com/?cid=3845356733398198530&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "rating": 4.1,
+            "review_count": 337,
+            "url": "https://maps.google.com/?cid=2297479750680730662&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "LA MORENA TACO SHOP",
+            "name": "NISHIKI RAMEN",
             "kind": "restaurant",
             "city": "SAN DIEGO",
-            "address": "5059 FEDERAL BLVD BLVD",
+            "address": "8055 ARMOUR ST, SUITE# 201A",
             "status": "Permit Renewed"
           },
-          "score": 37.35,
-          "rank": 12
+          "score": 27.84,
+          "rank": 14
         },
         {
-          "id": "chipotle mexican grill 1770",
-          "name": "CHIPOTLE MEXICAN GRILL #1770",
-          "neighborhood": "SAN DIEGO",
+          "id": "comfort inn",
+          "name": "COMFORT INN",
+          "neighborhood": "CHULA VISTA",
           "blurb": "",
           "month": null,
           "sources": [
@@ -834,22 +866,22 @@
           "yelp": null,
           "google": {
             "rating": 3.8,
-            "review_count": 635,
-            "url": "https://maps.google.com/?cid=682614540619607992&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "review_count": 910,
+            "url": "https://maps.google.com/?cid=18283657172006344639&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "CHIPOTLE MEXICAN GRILL #1770",
+            "name": "COMFORT INN",
             "kind": "restaurant",
-            "city": "SAN DIEGO",
-            "address": "3881 VALLEY CENTRE DR",
+            "city": "CHULA VISTA",
+            "address": "91 E BONITA RD",
             "status": "Permit Renewed"
           },
-          "score": 36.4,
-          "rank": 13
+          "score": 27.12,
+          "rank": 15
         },
         {
-          "id": "orient valley filipino cuisine",
-          "name": "ORIENT VALLEY FILIPINO CUISINE",
+          "id": "sees candies 2115",
+          "name": "SEES CANDIES #2115",
           "neighborhood": "SAN DIEGO",
           "blurb": "",
           "month": null,
@@ -861,19 +893,75 @@
           ],
           "yelp": null,
           "google": {
-            "rating": 4.2,
-            "review_count": 116,
-            "url": "https://maps.google.com/?cid=431813399562348686&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "rating": 4.8,
+            "review_count": 61,
+            "url": "https://maps.google.com/?cid=2434108635427882873&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "ORIENT VALLEY FILIPINO CUISINE",
+            "name": "SEES CANDIES #2115",
             "kind": "restaurant",
             "city": "SAN DIEGO",
-            "address": "9951 CARMEL MTN RD",
+            "address": "3751 ROSECRANS ST",
+            "status": "Issued"
+          },
+          "score": 26.86,
+          "rank": 16
+        },
+        {
+          "id": "tokyo grill",
+          "name": "TOKYO GRILL",
+          "neighborhood": "CHULA VISTA",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.1,
+            "review_count": 128,
+            "url": "https://maps.google.com/?cid=8278490608344772739&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": {
+            "name": "TOKYO GRILL",
+            "kind": "restaurant",
+            "city": "CHULA VISTA",
+            "address": "2015 BIRCH RD",
             "status": "Permit Renewed"
           },
-          "score": 36.07,
-          "rank": 14
+          "score": 26.84,
+          "rank": 17
+        },
+        {
+          "id": "san diego tennis raquet club",
+          "name": "SAN DIEGO TENNIS + RAQUET CLUB",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.6,
+            "review_count": 71,
+            "url": "https://maps.google.com/?cid=15168435972056415651&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": {
+            "name": "SAN DIEGO TENNIS + RAQUET CLUB",
+            "kind": "restaurant",
+            "city": "SAN DIEGO",
+            "address": "4848 TECOLOTE RD",
+            "status": "Permit Renewed"
+          },
+          "score": 26.72,
+          "rank": 18
         },
         {
           "id": "verise",
@@ -885,12 +973,16 @@
             {
               "name": "theresandiego",
               "url": "https://www.verisecarlsbad.com/"
+            },
+            {
+              "name": "county_permit",
+              "url": null
             }
           ],
           "yelp": null,
           "google": {
             "rating": 4.4,
-            "review_count": 56,
+            "review_count": 57,
             "url": "https://maps.google.com/?cid=12653646455053338343&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
@@ -900,12 +992,204 @@
             "address": "5420 GRAND PACIFIC DR",
             "status": "Permit Renewed"
           },
-          "score": 34.64,
-          "rank": 15
+          "score": 25.75,
+          "rank": 19
         },
         {
-          "id": "dickeys bbq pit",
-          "name": "DICKEYS BBQ PIT",
+          "id": "wienerschnitzel 381",
+          "name": "WIENERSCHNITZEL #381",
+          "neighborhood": "CHULA VISTA",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "WIENERSCHNITZEL #381",
+            "kind": "restaurant",
+            "city": "CHULA VISTA",
+            "address": "283 PALOMAR ST",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 20
+        },
+        {
+          "id": "baja bettys",
+          "name": "BAJA BETTYS",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "BAJA BETTYS",
+            "kind": "restaurant",
+            "city": "SAN DIEGO",
+            "address": "1421 UNIVERSITY AVE",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 21
+        },
+        {
+          "id": "brothers giant pizza",
+          "name": "BROTHERS GIANT PIZZA",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "BROTHERS GIANT PIZZA",
+            "kind": "restaurant",
+            "city": "SAN DIEGO",
+            "address": "6690 MISSION GORGE RD, SUITE# I",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 22
+        },
+        {
+          "id": "safari park food service okavango",
+          "name": "SAFARI PARK FOOD SERVICE - OKAVANGO",
+          "neighborhood": "ESCONDIDO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "SAFARI PARK FOOD SERVICE - OKAVANGO",
+            "kind": "restaurant",
+            "city": "ESCONDIDO",
+            "address": "15500 SAN PASQUAL VALLEY RD",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 23
+        },
+        {
+          "id": "crust kitchen",
+          "name": "CRUST KITCHEN",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "CRUST KITCHEN",
+            "kind": "restaurant",
+            "city": "SAN DIEGO",
+            "address": "1201 S HOTEL CIR",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 24
+        },
+        {
+          "id": "fraternal order of eagles 2712",
+          "name": "FRATERNAL ORDER OF EAGLES#2712",
+          "neighborhood": "NATIONAL CITY",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "FRATERNAL ORDER OF EAGLES#2712",
+            "kind": "restaurant",
+            "city": "NATIONAL CITY",
+            "address": "1131 ROOSEVELT AVE",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 25
+        },
+        {
+          "id": "figaro desserts",
+          "name": "FIGARO DESSERTS",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "FIGARO DESSERTS",
+            "kind": "restaurant",
+            "city": "SAN DIEGO",
+            "address": "3011 UNIVERSITY AVE",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 26
+        },
+        {
+          "id": "seaport fudge factory",
+          "name": "SEAPORT FUDGE FACTORY",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "SEAPORT FUDGE FACTORY",
+            "kind": "restaurant",
+            "city": "SAN DIEGO",
+            "address": "859 W HARBOR DR",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 27
+        },
+        {
+          "id": "dominos pizza 7705",
+          "name": "DOMINOS PIZZA #7705",
           "neighborhood": "EL CAJON",
           "blurb": "",
           "month": null,
@@ -916,24 +1200,399 @@
             }
           ],
           "yelp": null,
-          "google": {
-            "rating": 4.2,
-            "review_count": 59,
-            "url": "https://maps.google.com/?cid=15998731966184546650&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
+          "google": null,
           "permit": {
-            "name": "DICKEYS BBQ PIT",
+            "name": "DOMINOS PIZZA #7705",
             "kind": "restaurant",
             "city": "EL CAJON",
-            "address": "2959 JAMACHA RD, SUITE# C",
+            "address": "1104 E WASHINGTON AVE",
             "status": "Permit Renewed"
           },
-          "score": 34.18,
-          "rank": 16
+          "score": 6.0,
+          "rank": 28
         },
         {
-          "id": "salud y bienestar",
-          "name": "SALUD Y BIENESTAR",
+          "id": "jack in box 99",
+          "name": "JACK IN THE BOX #99",
+          "neighborhood": "CHULA VISTA",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "JACK IN THE BOX #99",
+            "kind": "restaurant",
+            "city": "CHULA VISTA",
+            "address": "370 E H ST",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 29
+        },
+        {
+          "id": "sheraton san diego hotel marina harbor vine",
+          "name": "SHERATON SAN DIEGO HOTEL & MARINA - HARBOR & VINE",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "SHERATON SAN DIEGO HOTEL & MARINA - HARBOR & VINE",
+            "kind": "restaurant",
+            "city": "SAN DIEGO",
+            "address": "1380 HARBOR ISLAND DR",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 30
+        },
+        {
+          "id": "san diego rescue mission inc",
+          "name": "SAN DIEGO RESCUE MISSION INC",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "SAN DIEGO RESCUE MISSION INC",
+            "kind": "restaurant",
+            "city": "SAN DIEGO",
+            "address": "120 ELM ST",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 31
+        },
+        {
+          "id": "christian life center",
+          "name": "CHRISTIAN LIFE CENTER",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "CHRISTIAN LIFE CENTER",
+            "kind": "restaurant",
+            "city": "SAN DIEGO",
+            "address": "17010 POMERADO RD",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 32
+        },
+        {
+          "id": "alices italian gourmet",
+          "name": "ALICES ITALIAN GOURMET",
+          "neighborhood": "ENCINITAS",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "ALICES ITALIAN GOURMET",
+            "kind": "restaurant",
+            "city": "ENCINITAS",
+            "address": "252 N EL CAMINO REAL, SUITE# 1",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 33
+        },
+        {
+          "id": "petco park 202 board n brew",
+          "name": "PETCO PARK - 202 - BOARD N BREW",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "PETCO PARK - 202 - BOARD N BREW",
+            "kind": "restaurant",
+            "city": "SAN DIEGO",
+            "address": "100 PARK BLVD",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 34
+        },
+        {
+          "id": "shadow mountian lower kitchen",
+          "name": "SHADOW MOUNTIAN - LOWER KITCHEN",
+          "neighborhood": "EL CAJON",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "SHADOW MOUNTIAN - LOWER KITCHEN",
+            "kind": "restaurant",
+            "city": "EL CAJON",
+            "address": "2100 GREENFIELD DR",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 35
+        },
+        {
+          "id": "yard house restaurant",
+          "name": "YARD HOUSE RESTAURANT",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "YARD HOUSE RESTAURANT",
+            "kind": "restaurant",
+            "city": "SAN DIEGO",
+            "address": "1640 CAMINO DEL RIO, SUITE# 157",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 36
+        },
+        {
+          "id": "cotija taco stand",
+          "name": "COTIJA TACO STAND",
+          "neighborhood": "CHULA VISTA",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "COTIJA TACO STAND",
+            "kind": "restaurant",
+            "city": "CHULA VISTA",
+            "address": "872 EASTLAKE PKWY",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 37
+        },
+        {
+          "id": "testo pepesto italian restaurant",
+          "name": "TESTO PEPESTO ITALIAN RESTAURANT",
+          "neighborhood": "EL CAJON",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "TESTO PEPESTO ITALIAN RESTAURANT",
+            "kind": "restaurant",
+            "city": "EL CAJON",
+            "address": "221 E MAIN ST",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 38
+        },
+        {
+          "id": "k1 speed",
+          "name": "K1 SPEED",
+          "neighborhood": "CHULA VISTA",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "K1 SPEED",
+            "kind": "restaurant",
+            "city": "CHULA VISTA",
+            "address": "881 DISTRICT PL, SUITE# 101-103",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 39
+        },
+        {
+          "id": "hyatt regency mission bay spa marina swim in kitchen and bar",
+          "name": "HYATT REGENCY MISSION BAY SPA & MARINA - SWIM-IN KITCHEN AND BAR",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "HYATT REGENCY MISSION BAY SPA & MARINA - SWIM-IN KITCHEN AND BAR",
+            "kind": "restaurant",
+            "city": "SAN DIEGO",
+            "address": "1441 QUIVIRA RD",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 40
+        }
+      ]
+    },
+    "coffee": {
+      "label": "Coffee Shops",
+      "title": "Top-Rated Coffee Shops",
+      "methodology": "Ranked by Yelp/Google rating and review volume. (No reliable \"newly opened\" data source exists for this category -- see README.)",
+      "restaurants": [
+        {
+          "id": "donnys cafe inc",
+          "name": "DONNYS CAFE INC",
+          "neighborhood": "BONITA",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.9,
+            "review_count": 419,
+            "url": "https://maps.google.com/?cid=5460402176035876809&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": {
+            "name": "DONNYS CAFE INC",
+            "kind": "coffee",
+            "city": "BONITA",
+            "address": "3901 BONITA RD",
+            "status": "Permit Renewed"
+          },
+          "score": 29.76,
+          "rank": 1
+        },
+        {
+          "id": "coffee corner",
+          "name": "THE COFFEE CORNER",
+          "neighborhood": "SANTEE",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.7,
+            "review_count": 239,
+            "url": "https://maps.google.com/?cid=5738661674690368751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": {
+            "name": "THE COFFEE CORNER",
+            "kind": "coffee",
+            "city": "SANTEE",
+            "address": "9608 CARLTON HILLS BLVD",
+            "status": "Permit Renewed"
+          },
+          "score": 29.28,
+          "rank": 2
+        },
+        {
+          "id": "la costa coffee roasting co",
+          "name": "LA COSTA COFFEE ROASTING CO",
+          "neighborhood": "CARLSBAD",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.6,
+            "review_count": 447,
+            "url": "https://maps.google.com/?cid=1324431538832430226&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": {
+            "name": "LA COSTA COFFEE ROASTING CO",
+            "kind": "coffee",
+            "city": "CARLSBAD",
+            "address": "6965 EL CAMINO REAL",
+            "status": "Permit Renewed"
+          },
+          "score": 29.04,
+          "rank": 3
+        },
+        {
+          "id": "cafe moto",
+          "name": "CAFE MOTO",
           "neighborhood": "SAN DIEGO",
           "blurb": "",
           "month": null,
@@ -945,23 +1604,23 @@
           ],
           "yelp": null,
           "google": {
-            "rating": 3.6,
-            "review_count": 46,
-            "url": "https://maps.google.com/?cid=1143007058620782347&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "rating": 4.6,
+            "review_count": 1262,
+            "url": "https://maps.google.com/?cid=5084901661968063763&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "SALUD Y BIENESTAR",
-            "kind": "restaurant",
+            "name": "CAFE MOTO",
+            "kind": "coffee",
             "city": "SAN DIEGO",
-            "address": "3875 MARLBOROUGH AVE B",
+            "address": "2619 NATIONAL AVE",
             "status": "Permit Renewed"
           },
-          "score": 31.69,
-          "rank": 17
+          "score": 29.04,
+          "rank": 4
         },
         {
-          "id": "taco bell 25497",
-          "name": "TACO BELL #25497",
+          "id": "ironsmith coffee roasters",
+          "name": "IRONSMITH COFFEE ROASTERS",
           "neighborhood": "ENCINITAS",
           "blurb": "",
           "month": null,
@@ -973,52 +1632,24 @@
           ],
           "yelp": null,
           "google": {
-            "rating": 3.3,
-            "review_count": 51,
-            "url": "https://maps.google.com/?cid=2528289536201845634&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "rating": 4.6,
+            "review_count": 242,
+            "url": "https://maps.google.com/?cid=15569147260243604617&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "TACO BELL #25497",
-            "kind": "restaurant",
+            "name": "IRONSMITH COFFEE ROASTERS",
+            "kind": "coffee",
             "city": "ENCINITAS",
-            "address": "1502 ENCINITAS BLVD",
+            "address": "458 S COAST HWY 101",
             "status": "Permit Renewed"
           },
-          "score": 31.08,
-          "rank": 18
+          "score": 29.04,
+          "rank": 5
         },
         {
-          "id": "candy land",
-          "name": "Candy Land",
-          "neighborhood": "",
-          "blurb": "Caf\u00e9",
-          "month": "July 2026",
-          "sources": [
-            {
-              "name": "theresandiego",
-              "url": "https://theresandiego.com/new-restaurants-opening-in-san-diego-in-2026/"
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 2.3,
-            "review_count": 40,
-            "url": "https://maps.google.com/?cid=7853179735249252273&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "CANDY LAND",
-            "kind": "restaurant",
-            "city": "ESCONDIDO",
-            "address": "356 W VALLEY PKWY",
-            "status": "Permit Renewed"
-          },
-          "score": 27.4,
-          "rank": 19
-        },
-        {
-          "id": "antonios mexican food",
-          "name": "ANTONIOS MEXICAN FOOD",
-          "neighborhood": "ESCONDIDO",
+          "id": "heartwork coffee bar",
+          "name": "HEARTWORK COFFEE BAR",
+          "neighborhood": "SAN DIEGO",
           "blurb": "",
           "month": null,
           "sources": [
@@ -1029,507 +1660,20 @@
           ],
           "yelp": null,
           "google": {
-            "rating": 4.5,
-            "review_count": 2,
-            "url": "https://maps.google.com/?cid=5257559155494446902&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "rating": 4.6,
+            "review_count": 359,
+            "url": "https://maps.google.com/?cid=2177066684695043070&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "ANTONIOS MEXICAN FOOD",
-            "kind": "restaurant",
-            "city": "ESCONDIDO",
-            "address": "1755 E VALLEY PKWY",
-            "status": "Permit Renewed"
-          },
-          "score": 26.61,
-          "rank": 20
-        },
-        {
-          "id": "tennis swim garden",
-          "name": "TENNIS & SWIM GARDEN",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "TENNIS & SWIM GARDEN",
-            "kind": "restaurant",
+            "name": "HEARTWORK COFFEE BAR",
+            "kind": "coffee",
             "city": "SAN DIEGO",
-            "address": "16930 BING CROSBY BLVD",
+            "address": "3993 GOLDFINCH ST",
             "status": "Permit Renewed"
           },
-          "score": 10.0,
-          "rank": 21
+          "score": 29.04,
+          "rank": 6
         },
-        {
-          "id": "lj crafted wines",
-          "name": "LJ CRAFTED WINES",
-          "neighborhood": "LA JOLLA",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "LJ CRAFTED WINES",
-            "kind": "restaurant",
-            "city": "LA JOLLA",
-            "address": "5621 LA JOLLA BLVD",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 22
-        },
-        {
-          "id": "corner drafthouse",
-          "name": "THE CORNER DRAFTHOUSE",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "THE CORNER DRAFTHOUSE",
-            "kind": "restaurant",
-            "city": "SAN DIEGO",
-            "address": "495 LAUREL ST",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 23
-        },
-        {
-          "id": "dinis by sea",
-          "name": "DINIS BY THE SEA",
-          "neighborhood": "CARLSBAD",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "DINIS BY THE SEA",
-            "kind": "restaurant",
-            "city": "CARLSBAD",
-            "address": "3290 CARLSBAD BLVD",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 24
-        },
-        {
-          "id": "docks cocktail lounge",
-          "name": "DOCKS COCKTAIL LOUNGE",
-          "neighborhood": "CHULA VISTA",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "DOCKS COCKTAIL LOUNGE",
-            "kind": "restaurant",
-            "city": "CHULA VISTA",
-            "address": "317 03RD AVE",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 25
-        },
-        {
-          "id": "raglan public house",
-          "name": "RAGLAN PUBLIC HOUSE",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "RAGLAN PUBLIC HOUSE",
-            "kind": "restaurant",
-            "city": "SAN DIEGO",
-            "address": "1851 BACON ST",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 26
-        },
-        {
-          "id": "springhill suites by marriott",
-          "name": "SPRINGHILL SUITES BY MARRIOTT",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "SPRINGHILL SUITES BY MARRIOTT",
-            "kind": "restaurant",
-            "city": "SAN DIEGO",
-            "address": "2401 N CAMINO DEL RIO",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 27
-        },
-        {
-          "id": "noodles noodles",
-          "name": "NOODLES NOODLES",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "NOODLES NOODLES",
-            "kind": "restaurant",
-            "city": "SAN DIEGO",
-            "address": "1555 PALM AVE, SUITE# H",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 28
-        },
-        {
-          "id": "miho catering co",
-          "name": "MIHO CATERING CO",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "MIHO CATERING CO",
-            "kind": "restaurant",
-            "city": "SAN DIEGO",
-            "address": "4696 RUFFNER ST, SUITE# A",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 29
-        },
-        {
-          "id": "taqueria imperial 1",
-          "name": "TAQUERIA IMPERIAL 1",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "TAQUERIA IMPERIAL 1",
-            "kind": "restaurant",
-            "city": "SAN DIEGO",
-            "address": "6911 IMPERIAL AVE",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 30
-        },
-        {
-          "id": "el patio",
-          "name": "EL PATIO",
-          "neighborhood": "CHULA VISTA",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "EL PATIO",
-            "kind": "restaurant",
-            "city": "CHULA VISTA",
-            "address": "410 BROADWAY",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 31
-        },
-        {
-          "id": "don bravo",
-          "name": "DON BRAVO",
-          "neighborhood": "LA JOLLA",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "DON BRAVO",
-            "kind": "restaurant",
-            "city": "LA JOLLA",
-            "address": "5504 LA JOLLA BLVD",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 32
-        },
-        {
-          "id": "victorias oceanside",
-          "name": "VICTORIAS OCEANSIDE",
-          "neighborhood": "OCEANSIDE",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "VICTORIAS OCEANSIDE",
-            "kind": "restaurant",
-            "city": "OCEANSIDE",
-            "address": "495 COLLEGE BLVD, UNIT# C",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 33
-        },
-        {
-          "id": "hotel del coronado beach shack",
-          "name": "HOTEL DEL CORONADO - BEACH SHACK",
-          "neighborhood": "CORONADO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "HOTEL DEL CORONADO - BEACH SHACK",
-            "kind": "restaurant",
-            "city": "CORONADO",
-            "address": "1500 ORANGE AVE",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 34
-        },
-        {
-          "id": "curry morre indian bistro",
-          "name": "CURRY & MORRE INDIAN BISTRO",
-          "neighborhood": "SAN MARCOS",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "CURRY & MORRE INDIAN BISTRO",
-            "kind": "restaurant",
-            "city": "SAN MARCOS",
-            "address": "113 LAS POSAS",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 35
-        },
-        {
-          "id": "los amigos",
-          "name": "LOS AMIGOS",
-          "neighborhood": "SANTEE",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "LOS AMIGOS",
-            "kind": "restaurant",
-            "city": "SANTEE",
-            "address": "10251 MAST BLVD",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 36
-        },
-        {
-          "id": "grande colonial nine ten",
-          "name": "GRANDE COLONIAL NINE TEN",
-          "neighborhood": "LA JOLLA",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "GRANDE COLONIAL NINE TEN",
-            "kind": "restaurant",
-            "city": "LA JOLLA",
-            "address": "910 PROSPECT ST",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 37
-        },
-        {
-          "id": "outback steakhouse",
-          "name": "OUTBACK STEAKHOUSE",
-          "neighborhood": "EL CAJON",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "OUTBACK STEAKHOUSE",
-            "kind": "restaurant",
-            "city": "EL CAJON",
-            "address": "722 JAMACHA RD",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 38
-        },
-        {
-          "id": "michele coulon dessertier",
-          "name": "MICHELE COULON DESSERTIER",
-          "neighborhood": "LA JOLLA",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "MICHELE COULON DESSERTIER",
-            "kind": "restaurant",
-            "city": "LA JOLLA",
-            "address": "7556 FAY AVE",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 39
-        },
-        {
-          "id": "monello",
-          "name": "MONELLO",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "MONELLO",
-            "kind": "restaurant",
-            "city": "SAN DIEGO",
-            "address": "750 W FIR ST",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 40
-        }
-      ]
-    },
-    "coffee": {
-      "label": "Coffee Shops",
-      "title": "Top-Rated Coffee Shops",
-      "methodology": "Ranked by Yelp/Google rating and review volume. (No reliable \"newly opened\" data source exists for this category -- see README.)",
-      "restaurants": [
         {
           "id": "rancho bernardo inn cafe granada",
           "name": "RANCHO BERNARDO INN - CAFE GRANADA",
@@ -1555,8 +1699,8 @@
             "address": "17550 BERNARDO OAKS DR",
             "status": "Permit Renewed"
           },
-          "score": 38.5,
-          "rank": 1
+          "score": 28.8,
+          "rank": 7
         },
         {
           "id": "peets coffee and tea",
@@ -1583,13 +1727,13 @@
             "address": "350 UNIVERSITY AVE",
             "status": "Permit Renewed"
           },
-          "score": 38.2,
-          "rank": 2
+          "score": 28.56,
+          "rank": 8
         },
         {
-          "id": "starbucks coffee 6783",
-          "name": "STARBUCKS COFFEE #6783",
-          "neighborhood": "NATIONAL CITY",
+          "id": "coffee bean and tea leaf",
+          "name": "COFFEE BEAN AND TEA LEAF",
+          "neighborhood": "SAN DIEGO",
           "blurb": "",
           "month": null,
           "sources": [
@@ -1600,24 +1744,24 @@
           ],
           "yelp": null,
           "google": {
-            "rating": 4.2,
-            "review_count": 928,
-            "url": "https://maps.google.com/?cid=13406344042341969757&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "rating": 4.4,
+            "review_count": 424,
+            "url": "https://maps.google.com/?cid=7990739595963637530&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "STARBUCKS COFFEE #6783",
+            "name": "COFFEE BEAN AND TEA LEAF",
             "kind": "coffee",
-            "city": "NATIONAL CITY",
-            "address": "2230 E PLAZA BLVD",
+            "city": "SAN DIEGO",
+            "address": "9343 CLAIREMONT MESA BLVD",
             "status": "Permit Renewed"
           },
-          "score": 37.6,
-          "rank": 3
+          "score": 28.56,
+          "rank": 9
         },
         {
-          "id": "starbucks coffee",
-          "name": "STARBUCKS COFFEE",
-          "neighborhood": "LA JOLLA",
+          "id": "lofty coffee co",
+          "name": "LOFTY COFFEE CO.",
+          "neighborhood": "ENCINITAS",
           "blurb": "",
           "month": null,
           "sources": [
@@ -1628,24 +1772,24 @@
           ],
           "yelp": null,
           "google": {
-            "rating": 4.2,
-            "review_count": 928,
-            "url": "https://maps.google.com/?cid=13406344042341969757&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "rating": 4.4,
+            "review_count": 1404,
+            "url": "https://maps.google.com/?cid=3131332880983610154&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "STARBUCKS COFFEE",
+            "name": "LOFTY COFFEE CO.",
             "kind": "coffee",
-            "city": "LA JOLLA",
-            "address": "2206 TORREY PINES RD",
+            "city": "ENCINITAS",
+            "address": "90 N COAST HIGHWAY 101, SUITE# 214",
             "status": "Permit Renewed"
           },
-          "score": 37.6,
-          "rank": 4
+          "score": 28.56,
+          "rank": 10
         },
         {
-          "id": "starbucks coffee 6589",
-          "name": "STARBUCKS COFFEE #6589",
-          "neighborhood": "CHULA VISTA",
+          "id": "omni la costa resort and spa spa cafe",
+          "name": "OMNI LA COSTA RESORT AND SPA - SPA CAFE",
+          "neighborhood": "CARLSBAD",
           "blurb": "",
           "month": null,
           "sources": [
@@ -1656,24 +1800,24 @@
           ],
           "yelp": null,
           "google": {
-            "rating": 4.2,
-            "review_count": 928,
-            "url": "https://maps.google.com/?cid=13406344042341969757&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "rating": 4.4,
+            "review_count": 3787,
+            "url": "https://maps.google.com/?cid=1789595452641101702&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "STARBUCKS COFFEE #6589",
+            "name": "OMNI LA COSTA RESORT AND SPA - SPA CAFE",
             "kind": "coffee",
-            "city": "CHULA VISTA",
-            "address": "605 E PALOMAR ST",
+            "city": "CARLSBAD",
+            "address": "2100 COSTA DEL MAR RD",
             "status": "Permit Renewed"
           },
-          "score": 37.6,
-          "rank": 5
+          "score": 28.56,
+          "rank": 11
         },
         {
-          "id": "starbucks coffee 6632",
-          "name": "STARBUCKS COFFEE #6632",
-          "neighborhood": "CHULA VISTA",
+          "id": "omni la costa resort and spa employee kitchen cafe",
+          "name": "OMNI LA COSTA RESORT AND SPA - EMPLOYEE KITCHEN-CAFE",
+          "neighborhood": "CARLSBAD",
           "blurb": "",
           "month": null,
           "sources": [
@@ -1684,24 +1828,24 @@
           ],
           "yelp": null,
           "google": {
-            "rating": 4.1,
-            "review_count": 1051,
-            "url": "https://maps.google.com/?cid=17434879595627894247&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "rating": 4.4,
+            "review_count": 3787,
+            "url": "https://maps.google.com/?cid=1789595452641101702&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "STARBUCKS COFFEE #6632",
+            "name": "OMNI LA COSTA RESORT AND SPA - EMPLOYEE KITCHEN-CAFE",
             "kind": "coffee",
-            "city": "CHULA VISTA",
-            "address": "555 BROADWAY, SUITE# 147",
+            "city": "CARLSBAD",
+            "address": "2100 COSTA DEL MAR RD",
             "status": "Permit Renewed"
           },
-          "score": 37.3,
-          "rank": 6
+          "score": 28.56,
+          "rank": 12
         },
         {
-          "id": "starbucks coffee 589",
-          "name": "STARBUCKS COFFEE #589",
-          "neighborhood": "EL CAJON",
+          "id": "tonys cafe",
+          "name": "TONYS CAFE",
+          "neighborhood": "SAN DIEGO",
           "blurb": "",
           "month": null,
           "sources": [
@@ -1712,19 +1856,47 @@
           ],
           "yelp": null,
           "google": {
-            "rating": 4.1,
-            "review_count": 1051,
-            "url": "https://maps.google.com/?cid=17434879595627894247&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "rating": 4.4,
+            "review_count": 189,
+            "url": "https://maps.google.com/?cid=452883018893360807&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "STARBUCKS COFFEE #589",
+            "name": "TONYS CAFE",
             "kind": "coffee",
-            "city": "EL CAJON",
-            "address": "2740 FLETCHER PKWY",
+            "city": "SAN DIEGO",
+            "address": "5034 NEWPORT AVE",
             "status": "Permit Renewed"
           },
-          "score": 37.3,
-          "rank": 7
+          "score": 28.43,
+          "rank": 13
+        },
+        {
+          "id": "hilton san diego bayfront employee cafe",
+          "name": "HILTON SAN DIEGO BAYFRONT - EMPLOYEE CAFE",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.3,
+            "review_count": 9505,
+            "url": "https://maps.google.com/?cid=15450103678142291927&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": {
+            "name": "HILTON SAN DIEGO BAYFRONT - EMPLOYEE CAFE",
+            "kind": "coffee",
+            "city": "SAN DIEGO",
+            "address": "1 PARK BLVD",
+            "status": "Permit Renewed"
+          },
+          "score": 28.32,
+          "rank": 14
         },
         {
           "id": "starbucks coffee 5914",
@@ -1740,9 +1912,9 @@
           ],
           "yelp": null,
           "google": {
-            "rating": 4,
-            "review_count": 868,
-            "url": "https://maps.google.com/?cid=14985616552724348093&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "rating": 4.2,
+            "review_count": 928,
+            "url": "https://maps.google.com/?cid=13406344042341969757&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
             "name": "STARBUCKS COFFEE #5914",
@@ -1751,209 +1923,13 @@
             "address": "3881 VALLEY CENTRE DR",
             "status": "Permit Renewed"
           },
-          "score": 37.0,
-          "rank": 8
-        },
-        {
-          "id": "starbucks coffee 6661",
-          "name": "STARBUCKS COFFEE #6661",
-          "neighborhood": "ESCONDIDO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 4,
-            "review_count": 868,
-            "url": "https://maps.google.com/?cid=14985616552724348093&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "STARBUCKS COFFEE #6661",
-            "kind": "coffee",
-            "city": "ESCONDIDO",
-            "address": "3440 DEL LAGO BLVD",
-            "status": "Permit Renewed"
-          },
-          "score": 37.0,
-          "rank": 9
-        },
-        {
-          "id": "starbucks coffee 6741",
-          "name": "STARBUCKS COFFEE #6741",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 4,
-            "review_count": 868,
-            "url": "https://maps.google.com/?cid=14985616552724348093&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "STARBUCKS COFFEE #6741",
-            "kind": "coffee",
-            "city": "SAN DIEGO",
-            "address": "784 W WASHINGTON ST",
-            "status": "Permit Renewed"
-          },
-          "score": 37.0,
-          "rank": 10
-        },
-        {
-          "id": "starbucks coffee 6521",
-          "name": "STARBUCKS COFFEE #6521",
-          "neighborhood": "LA JOLLA",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 4,
-            "review_count": 868,
-            "url": "https://maps.google.com/?cid=14985616552724348093&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "STARBUCKS COFFEE #6521",
-            "kind": "coffee",
-            "city": "LA JOLLA",
-            "address": "5604 LA JOLLA BLVD",
-            "status": "Permit Renewed"
-          },
-          "score": 37.0,
-          "rank": 11
-        },
-        {
-          "id": "starbucks coffee 6716",
-          "name": "STARBUCKS COFFEE #6716",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 4,
-            "review_count": 868,
-            "url": "https://maps.google.com/?cid=14985616552724348093&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "STARBUCKS COFFEE #6716",
-            "kind": "coffee",
-            "city": "SAN DIEGO",
-            "address": "3145 SPORTS ARENA BLVD",
-            "status": "Permit Renewed"
-          },
-          "score": 37.0,
-          "rank": 12
-        },
-        {
-          "id": "starbucks coffee 5638",
-          "name": "STARBUCKS COFFEE #5638",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 4,
-            "review_count": 868,
-            "url": "https://maps.google.com/?cid=14985616552724348093&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "STARBUCKS COFFEE #5638",
-            "kind": "coffee",
-            "city": "SAN DIEGO",
-            "address": "1240 UNIVERSITY AVE",
-            "status": "Permit Renewed"
-          },
-          "score": 37.0,
-          "rank": 13
-        },
-        {
-          "id": "starbucks coffee 6567",
-          "name": "STARBUCKS COFFEE #6567",
-          "neighborhood": "ESCONDIDO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 4,
-            "review_count": 868,
-            "url": "https://maps.google.com/?cid=14985616552724348093&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "STARBUCKS COFFEE #6567",
-            "kind": "coffee",
-            "city": "ESCONDIDO",
-            "address": "1485 E VALLEY PKWY, SUITE# A",
-            "status": "Permit Renewed"
-          },
-          "score": 37.0,
-          "rank": 14
-        },
-        {
-          "id": "starbucks coffee 5253",
-          "name": "STARBUCKS COFFEE #5253",
-          "neighborhood": "CHULA VISTA",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 4,
-            "review_count": 868,
-            "url": "https://maps.google.com/?cid=14985616552724348093&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "STARBUCKS COFFEE #5253",
-            "kind": "coffee",
-            "city": "CHULA VISTA",
-            "address": "1467 E H ST",
-            "status": "Permit Renewed"
-          },
-          "score": 37.0,
+          "score": 28.08,
           "rank": 15
         },
         {
-          "id": "starbucks coffee 644",
-          "name": "STARBUCKS COFFEE #644",
-          "neighborhood": "LA JOLLA",
+          "id": "hotel del coronado babcock and story bar and coffee shop",
+          "name": "HOTEL DEL CORONADO - BABCOCK AND STORY BAR AND COFFEE SHOP",
+          "neighborhood": "CORONADO",
           "blurb": "",
           "month": null,
           "sources": [
@@ -1964,23 +1940,23 @@
           ],
           "yelp": null,
           "google": {
-            "rating": 4,
-            "review_count": 868,
-            "url": "https://maps.google.com/?cid=14985616552724348093&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "rating": 3.9,
+            "review_count": 148,
+            "url": "https://maps.google.com/?cid=11364470226926223065&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "STARBUCKS COFFEE #644",
+            "name": "HOTEL DEL CORONADO - BABCOCK AND STORY BAR AND COFFEE SHOP",
             "kind": "coffee",
-            "city": "LA JOLLA",
-            "address": "8657 VILLA LA JOLLA DR",
+            "city": "CORONADO",
+            "address": "1500 ORANGE AVE",
             "status": "Permit Renewed"
           },
-          "score": 37.0,
+          "score": 26.68,
           "rank": 16
         },
         {
-          "id": "starbucks coffee 540",
-          "name": "STARBUCKS COFFEE #540",
+          "id": "hot blend cafe",
+          "name": "HOT BLEND CAFE",
           "neighborhood": "SAN DIEGO",
           "blurb": "",
           "month": null,
@@ -1992,299 +1968,23 @@
           ],
           "yelp": null,
           "google": {
-            "rating": 4,
-            "review_count": 868,
-            "url": "https://maps.google.com/?cid=14985616552724348093&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "rating": 5,
+            "review_count": 33,
+            "url": "https://maps.google.com/?cid=3666361639225997032&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "STARBUCKS COFFEE #540",
+            "name": "HOT BLEND CAFE",
             "kind": "coffee",
             "city": "SAN DIEGO",
-            "address": "4545 LA JOLLA VILLAGE DR",
+            "address": "1205 FASHION VALLEY RD",
             "status": "Permit Renewed"
           },
-          "score": 37.0,
+          "score": 25.98,
           "rank": 17
         },
         {
-          "id": "starbucks coffee 652",
-          "name": "STARBUCKS COFFEE #652",
-          "neighborhood": "ESCONDIDO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 4,
-            "review_count": 868,
-            "url": "https://maps.google.com/?cid=14985616552724348093&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "STARBUCKS COFFEE #652",
-            "kind": "coffee",
-            "city": "ESCONDIDO",
-            "address": "1282 AUTO PARK WAY C",
-            "status": "Permit Renewed"
-          },
-          "score": 37.0,
-          "rank": 18
-        },
-        {
-          "id": "starbucks coffee 6455",
-          "name": "STARBUCKS COFFEE #6455",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 4,
-            "review_count": 868,
-            "url": "https://maps.google.com/?cid=14985616552724348093&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "STARBUCKS COFFEE #6455",
-            "kind": "coffee",
-            "city": "SAN DIEGO",
-            "address": "12469 RANCHO BERNARDO RD",
-            "status": "Permit Renewed"
-          },
-          "score": 37.0,
-          "rank": 19
-        },
-        {
-          "id": "starbucks coffee 5454",
-          "name": "STARBUCKS COFFEE #5454",
-          "neighborhood": "CARLSBAD",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 4,
-            "review_count": 868,
-            "url": "https://maps.google.com/?cid=14985616552724348093&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "STARBUCKS COFFEE #5454",
-            "kind": "coffee",
-            "city": "CARLSBAD",
-            "address": "5620 PASEO DEL NORTE, SUITE# 1218",
-            "status": "Permit Renewed"
-          },
-          "score": 37.0,
-          "rank": 20
-        },
-        {
-          "id": "la costa coffee roasting co",
-          "name": "LA COSTA COFFEE ROASTING CO",
-          "neighborhood": "CARLSBAD",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "LA COSTA COFFEE ROASTING CO",
-            "kind": "coffee",
-            "city": "CARLSBAD",
-            "address": "6965 EL CAMINO REAL",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 21
-        },
-        {
-          "id": "starbucks coffee 6860",
-          "name": "STARBUCKS COFFEE #6860",
-          "neighborhood": "SOLANA BEACH",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "STARBUCKS COFFEE #6860",
-            "kind": "coffee",
-            "city": "SOLANA BEACH",
-            "address": "937 LOMAS SANTA FE DR",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 22
-        },
-        {
-          "id": "starbucks coffee 5212",
-          "name": "STARBUCKS COFFEE #5212",
-          "neighborhood": "OCEANSIDE",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "STARBUCKS COFFEE #5212",
-            "kind": "coffee",
-            "city": "OCEANSIDE",
-            "address": "815 COLLEGE BLVD",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 23
-        },
-        {
-          "id": "starbucks coffee 5832",
-          "name": "STARBUCKS COFFEE #5832",
-          "neighborhood": "OCEANSIDE",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "STARBUCKS COFFEE #5832",
-            "kind": "coffee",
-            "city": "OCEANSIDE",
-            "address": "4176 OCEANSIDE BLVD",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 24
-        },
-        {
-          "id": "starbucks coffee 5910",
-          "name": "STARBUCKS COFFEE #5910",
-          "neighborhood": "SAN MARCOS",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "STARBUCKS COFFEE #5910",
-            "kind": "coffee",
-            "city": "SAN MARCOS",
-            "address": "342 S TWIN OAKS VALLEY RD",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 25
-        },
-        {
-          "id": "starbucks coffee 5948",
-          "name": "STARBUCKS COFFEE 5948",
-          "neighborhood": "SAN MARCOS",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "STARBUCKS COFFEE 5948",
-            "kind": "coffee",
-            "city": "SAN MARCOS",
-            "address": "1680 DESCANSO AVE",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 26
-        },
-        {
-          "id": "starbucks coffee 5869",
-          "name": "STARBUCKS COFFEE #5869",
-          "neighborhood": "SAN MARCOS",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "STARBUCKS COFFEE #5869",
-            "kind": "coffee",
-            "city": "SAN MARCOS",
-            "address": "126 KNOLL RD",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 27
-        },
-        {
-          "id": "starbucks coffee 5737",
-          "name": "STARBUCKS COFFEE #5737",
-          "neighborhood": "CARDIFF BY THE SEA",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "STARBUCKS COFFEE #5737",
-            "kind": "coffee",
-            "city": "CARDIFF BY THE SEA",
-            "address": "2081 SAN ELIJO AVE",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 28
-        },
-        {
-          "id": "starbucks coffee 6546",
-          "name": "STARBUCKS COFFEE 6546",
+          "id": "nrgize lifestyle cafe",
+          "name": "NRGIZE LIFESTYLE CAFE",
           "neighborhood": "ENCINITAS",
           "blurb": "",
           "month": null,
@@ -2297,18 +1997,42 @@
           "yelp": null,
           "google": null,
           "permit": {
-            "name": "STARBUCKS COFFEE 6546",
+            "name": "NRGIZE LIFESTYLE CAFE",
             "kind": "coffee",
             "city": "ENCINITAS",
-            "address": "1560 LEUCADIA BLVD, SUITE# B",
+            "address": "201 S EL CAMINO REAL",
             "status": "Permit Renewed"
           },
-          "score": 10.0,
-          "rank": 29
+          "score": 6.0,
+          "rank": 18
         },
         {
-          "id": "starbucks coffee 530",
-          "name": "STARBUCKS COFFEE #530",
+          "id": "sky cafe and lounge",
+          "name": "SKY CAFE AND LOUNGE",
+          "neighborhood": "SPRING VALLEY",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "SKY CAFE AND LOUNGE",
+            "kind": "coffee",
+            "city": "SPRING VALLEY",
+            "address": "3515 SWEETWATER SPRINGS BLVD",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 19
+        },
+        {
+          "id": "zumbar coffee tea",
+          "name": "ZUMBAR COFFEE & TEA",
           "neighborhood": "SAN DIEGO",
           "blurb": "",
           "month": null,
@@ -2321,42 +2045,18 @@
           "yelp": null,
           "google": null,
           "permit": {
-            "name": "STARBUCKS COFFEE #530",
+            "name": "ZUMBAR COFFEE & TEA",
             "kind": "coffee",
             "city": "SAN DIEGO",
-            "address": "525 B ST",
+            "address": "10920 ROSELLE ST",
             "status": "Permit Renewed"
           },
-          "score": 10.0,
-          "rank": 30
+          "score": 6.0,
+          "rank": 20
         },
         {
-          "id": "starbucks coffee 528",
-          "name": "STARBUCKS COFFEE #528",
-          "neighborhood": "LA JOLLA",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "STARBUCKS COFFEE #528",
-            "kind": "coffee",
-            "city": "LA JOLLA",
-            "address": "1150 PROSPECT ST",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 31
-        },
-        {
-          "id": "starbucks coffee 6541",
-          "name": "STARBUCKS COFFEE #6541",
+          "id": "coffee and tea collective",
+          "name": "COFFEE AND TEA COLLECTIVE",
           "neighborhood": "SAN DIEGO",
           "blurb": "",
           "month": null,
@@ -2369,186 +2069,18 @@
           "yelp": null,
           "google": null,
           "permit": {
-            "name": "STARBUCKS COFFEE #6541",
+            "name": "COFFEE AND TEA COLLECTIVE",
             "kind": "coffee",
             "city": "SAN DIEGO",
-            "address": "635 SATURN BLVD",
+            "address": "2911 EL CAJON BLVD",
             "status": "Permit Renewed"
           },
-          "score": 10.0,
-          "rank": 32
+          "score": 6.0,
+          "rank": 21
         },
         {
-          "id": "starbucks coffee 6562",
-          "name": "STARBUCKS COFFEE #6562",
-          "neighborhood": "SAN YSIDRO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "STARBUCKS COFFEE #6562",
-            "kind": "coffee",
-            "city": "SAN YSIDRO",
-            "address": "4201 CAMINO DE LA PLAZA",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 33
-        },
-        {
-          "id": "starbucks coffee 5797",
-          "name": "STARBUCKS COFFEE #5797",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "STARBUCKS COFFEE #5797",
-            "kind": "coffee",
-            "city": "SAN DIEGO",
-            "address": "600 W BROADWAY",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 34
-        },
-        {
-          "id": "starbucks coffee 602",
-          "name": "STARBUCKS COFFEE #602",
-          "neighborhood": "CORONADO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "STARBUCKS COFFEE #602",
-            "kind": "coffee",
-            "city": "CORONADO",
-            "address": "960 ORANGE AVE",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 35
-        },
-        {
-          "id": "starbucks coffee 5867",
-          "name": "STARBUCKS COFFEE #5867",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "STARBUCKS COFFEE #5867",
-            "kind": "coffee",
-            "city": "SAN DIEGO",
-            "address": "3895 FAIRMOUNT AVE",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 36
-        },
-        {
-          "id": "starbucks coffee 5897",
-          "name": "STARBUCKS COFFEE #5897",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "STARBUCKS COFFEE #5897",
-            "kind": "coffee",
-            "city": "SAN DIEGO",
-            "address": "3436 COLLEGE AVE",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 37
-        },
-        {
-          "id": "starbucks coffee 5743",
-          "name": "STARBUCKS COFFEE #5743",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "STARBUCKS COFFEE #5743",
-            "kind": "coffee",
-            "city": "SAN DIEGO",
-            "address": "7030 MIRAMAR RD",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 38
-        },
-        {
-          "id": "starbucks coffee 5753",
-          "name": "STARBUCKS COFFEE #5753",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "STARBUCKS COFFEE #5753",
-            "kind": "coffee",
-            "city": "SAN DIEGO",
-            "address": "10720 WESTVIEW PKWY",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 39
-        },
-        {
-          "id": "starbucks coffee 6444",
-          "name": "STARBUCKS COFFEE #6444",
+          "id": "kings craft coffee",
+          "name": "THE KINGS CRAFT COFFEE",
           "neighborhood": "POWAY",
           "blurb": "",
           "month": null,
@@ -2561,13 +2093,445 @@
           "yelp": null,
           "google": null,
           "permit": {
-            "name": "STARBUCKS COFFEE #6444",
+            "name": "THE KINGS CRAFT COFFEE",
             "kind": "coffee",
             "city": "POWAY",
-            "address": "12202 POWAY RD",
+            "address": "14530 ESPOLA RD, SUITE# A",
             "status": "Permit Renewed"
           },
-          "score": 10.0,
+          "score": 6.0,
+          "rank": 22
+        },
+        {
+          "id": "elena french crepes cafe",
+          "name": "ELENA FRENCH CREPES CAFE",
+          "neighborhood": "OCEANSIDE",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "ELENA FRENCH CREPES CAFE",
+            "kind": "coffee",
+            "city": "OCEANSIDE",
+            "address": "511 PIER VIEW WAY",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 23
+        },
+        {
+          "id": "philz coffee",
+          "name": "PHILZ COFFEE",
+          "neighborhood": "ENCINITAS",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "PHILZ COFFEE",
+            "kind": "coffee",
+            "city": "ENCINITAS",
+            "address": "1060 S COAST HIGHWAY",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 24
+        },
+        {
+          "id": "shiraz cafe",
+          "name": "SHIRAZ CAFE",
+          "neighborhood": "LA JOLLA",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "SHIRAZ CAFE",
+            "kind": "coffee",
+            "city": "LA JOLLA",
+            "address": "8355 CLIFFRIDGE",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 25
+        },
+        {
+          "id": "catamaran coffee shop",
+          "name": "CATAMARAN COFFEE SHOP",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "CATAMARAN COFFEE SHOP",
+            "kind": "coffee",
+            "city": "SAN DIEGO",
+            "address": "3999 MISSION BLVD",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 26
+        },
+        {
+          "id": "james coffee co llc",
+          "name": "JAMES COFFEE CO LLC",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "JAMES COFFEE CO LLC",
+            "kind": "coffee",
+            "city": "SAN DIEGO",
+            "address": "2870 4TH AVE, SUITE# 107B",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 27
+        },
+        {
+          "id": "trident coffee",
+          "name": "TRIDENT COFFEE",
+          "neighborhood": "IMPERIAL BEACH",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "TRIDENT COFFEE",
+            "kind": "coffee",
+            "city": "IMPERIAL BEACH",
+            "address": "536 13TH ST, SUITE# 6",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 28
+        },
+        {
+          "id": "crowne plaza san diego mission valley kona cafe",
+          "name": "CROWNE PLAZA SAN DIEGO MISSION VALLEY - KONA CAFE",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "CROWNE PLAZA SAN DIEGO MISSION VALLEY - KONA CAFE",
+            "kind": "coffee",
+            "city": "SAN DIEGO",
+            "address": "2270 N HOTEL CIR",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 29
+        },
+        {
+          "id": "bump coffee",
+          "name": "BUMP COFFEE",
+          "neighborhood": "CARDIFF BY THE SEA",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "BUMP COFFEE",
+            "kind": "coffee",
+            "city": "CARDIFF BY THE SEA",
+            "address": "126 ABERDEEN DR",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 30
+        },
+        {
+          "id": "cafe bien",
+          "name": "CAFE BIEN",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "CAFE BIEN",
+            "kind": "coffee",
+            "city": "SAN DIEGO",
+            "address": "5379 EL CAJON BLVD",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 31
+        },
+        {
+          "id": "moe coffee",
+          "name": "MOE COFFEE",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "MOE COFFEE",
+            "kind": "coffee",
+            "city": "SAN DIEGO",
+            "address": "2544 STATE ST",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 32
+        },
+        {
+          "id": "coast coffee co",
+          "name": "COAST COFFEE CO",
+          "neighborhood": "CARLSBAD",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "COAST COFFEE CO",
+            "kind": "coffee",
+            "city": "CARLSBAD",
+            "address": "2525 EL CAMINO REAL",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 33
+        },
+        {
+          "id": "manzanita coffee house",
+          "name": "MANZANITA COFFEE HOUSE",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "MANZANITA COFFEE HOUSE",
+            "kind": "coffee",
+            "city": "SAN DIEGO",
+            "address": "13330 PASEO DEL VERANO NORTE",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 34
+        },
+        {
+          "id": "zen coffee and deli",
+          "name": "ZEN COFFEE AND DELI",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "ZEN COFFEE AND DELI",
+            "kind": "coffee",
+            "city": "SAN DIEGO",
+            "address": "5231 EL CAJON BLVD, SUITE# 157",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 35
+        },
+        {
+          "id": "sharp grossmont hospital cafe",
+          "name": "SHARP GROSSMONT HOSPITAL - CAFE",
+          "neighborhood": "LA MESA",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "SHARP GROSSMONT HOSPITAL - CAFE",
+            "kind": "coffee",
+            "city": "LA MESA",
+            "address": "5555 GROSSMONT CENTER DR",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 36
+        },
+        {
+          "id": "cafeina cafe",
+          "name": "CAFEINA CAFE",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "CAFEINA CAFE",
+            "kind": "coffee",
+            "city": "SAN DIEGO",
+            "address": "4011 46TH ST",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 37
+        },
+        {
+          "id": "ocean cafe",
+          "name": "OCEAN CAFE",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "OCEAN CAFE",
+            "kind": "coffee",
+            "city": "SAN DIEGO",
+            "address": "4426 INGRAHAM ST",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 38
+        },
+        {
+          "id": "hyatt regency la jolla perks coffee",
+          "name": "HYATT REGENCY LA JOLLA - PERKS COFFEE",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "HYATT REGENCY LA JOLLA - PERKS COFFEE",
+            "kind": "coffee",
+            "city": "SAN DIEGO",
+            "address": "3777 LA JOLLA VILLAGE DR",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 39
+        },
+        {
+          "id": "rancho cafe",
+          "name": "RANCHO CAFE",
+          "neighborhood": "EL CAJON",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "RANCHO CAFE",
+            "kind": "coffee",
+            "city": "EL CAJON",
+            "address": "11555 VIA RANCHO SAN DIEGO",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
           "rank": 40
         }
       ]
@@ -2602,7 +2566,7 @@
             "address": "7100 AVIARA RESORT DR",
             "status": "Permit Renewed"
           },
-          "score": 39.1,
+          "score": 29.28,
           "rank": 1
         },
         {
@@ -2630,7 +2594,7 @@
             "address": "2122 MAIN ST",
             "status": "Permit Renewed"
           },
-          "score": 38.8,
+          "score": 29.04,
           "rank": 2
         },
         {
@@ -2658,7 +2622,7 @@
             "address": "350 UNIVERSITY AVE",
             "status": "Permit Renewed"
           },
-          "score": 38.8,
+          "score": 29.04,
           "rank": 3
         },
         {
@@ -2686,8 +2650,36 @@
             "address": "2519 C ST",
             "status": "Permit Renewed"
           },
-          "score": 38.5,
+          "score": 28.8,
           "rank": 4
+        },
+        {
+          "id": "donut touch bakery",
+          "name": "DONUT TOUCH BAKERY",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.5,
+            "review_count": 381,
+            "url": "https://maps.google.com/?cid=1944067278989226982&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": {
+            "name": "DONUT TOUCH BAKERY",
+            "kind": "bakery",
+            "city": "SAN DIEGO",
+            "address": "6755 MIRA MESA BLVD",
+            "status": "Permit Renewed"
+          },
+          "score": 28.8,
+          "rank": 5
         },
         {
           "id": "town and country bakery",
@@ -2714,8 +2706,8 @@
             "address": "500 HOTEL CIR N",
             "status": "Permit Renewed"
           },
-          "score": 38.32,
-          "rank": 5
+          "score": 28.66,
+          "rank": 6
         },
         {
           "id": "loews coronado bay resort bakery kitchen",
@@ -2732,7 +2724,7 @@
           "yelp": null,
           "google": {
             "rating": 4.4,
-            "review_count": 5512,
+            "review_count": 5513,
             "url": "https://maps.google.com/?cid=6961448100308797960&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
@@ -2742,8 +2734,8 @@
             "address": "4000 CORONADO BAY RD",
             "status": "Permit Renewed"
           },
-          "score": 38.2,
-          "rank": 6
+          "score": 28.56,
+          "rank": 7
         },
         {
           "id": "p l bagel",
@@ -2770,13 +2762,69 @@
             "address": "3704 VOLTAIRE ST",
             "status": "Permit Renewed"
           },
-          "score": 38.2,
-          "rank": 7
+          "score": 28.56,
+          "rank": 8
         },
         {
-          "id": "einstein bros bagels 2426",
-          "name": "EINSTEIN BROS BAGELS #2426",
+          "id": "lucys bakery",
+          "name": "LUCYS BAKERY",
           "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.4,
+            "review_count": 627,
+            "url": "https://maps.google.com/?cid=10996683318633837931&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": {
+            "name": "LUCYS BAKERY",
+            "kind": "bakery",
+            "city": "SAN DIEGO",
+            "address": "31 31ST ST",
+            "status": "Permit Renewed"
+          },
+          "score": 28.56,
+          "rank": 9
+        },
+        {
+          "id": "golden bagel",
+          "name": "GOLDEN BAGEL",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.2,
+            "review_count": 343,
+            "url": "https://maps.google.com/?cid=14451811739838656912&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": {
+            "name": "GOLDEN BAGEL",
+            "kind": "bakery",
+            "city": "SAN DIEGO",
+            "address": "13289 BLACK MOUNTAIN RD",
+            "status": "Permit Renewed"
+          },
+          "score": 28.08,
+          "rank": 10
+        },
+        {
+          "id": "busy bees bagels bakery",
+          "name": "BUSY BEES BAGELS & BAKERY",
+          "neighborhood": "LA JOLLA",
           "blurb": "",
           "month": null,
           "sources": [
@@ -2788,46 +2836,18 @@
           "yelp": null,
           "google": {
             "rating": 4,
-            "review_count": 397,
-            "url": "https://maps.google.com/?cid=11825701298741971536&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "review_count": 293,
+            "url": "https://maps.google.com/?cid=839495453627702540&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
-            "name": "EINSTEIN BROS BAGELS #2426",
+            "name": "BUSY BEES BAGELS & BAKERY",
             "kind": "bakery",
-            "city": "SAN DIEGO",
-            "address": "8736 LAKE MURRAY BLVD",
+            "city": "LA JOLLA",
+            "address": "6861 LA JOLLA BLVD",
             "status": "Permit Renewed"
           },
-          "score": 37.0,
-          "rank": 8
-        },
-        {
-          "id": "einstein bros bagels 886",
-          "name": "EINSTEIN BROS BAGELS #886",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 3.9,
-            "review_count": 297,
-            "url": "https://maps.google.com/?cid=2952774808182542203&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "EINSTEIN BROS BAGELS #886",
-            "kind": "bakery",
-            "city": "SAN DIEGO",
-            "address": "5638 MISSION CENTER RD",
-            "status": "Permit Renewed"
-          },
-          "score": 36.7,
-          "rank": 9
+          "score": 27.6,
+          "rank": 11
         },
         {
           "id": "brueggers bagels",
@@ -2854,92 +2874,8 @@
             "address": "10625 SCRIPPS POWAY PKWY",
             "status": "Permit Renewed"
           },
-          "score": 36.7,
-          "rank": 10
-        },
-        {
-          "id": "einstein bros bagels 1683",
-          "name": "EINSTEIN BROS BAGELS #1683",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 3.9,
-            "review_count": 297,
-            "url": "https://maps.google.com/?cid=2952774808182542203&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "EINSTEIN BROS BAGELS #1683",
-            "kind": "bakery",
-            "city": "SAN DIEGO",
-            "address": "3675 MURPHY CANYON RD",
-            "status": "Permit Renewed"
-          },
-          "score": 36.7,
-          "rank": 11
-        },
-        {
-          "id": "einstein bros bagels 0890",
-          "name": "EINSTEIN BROS BAGELS #0890",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 3.9,
-            "review_count": 297,
-            "url": "https://maps.google.com/?cid=2952774808182542203&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "EINSTEIN BROS BAGELS #0890",
-            "kind": "bakery",
-            "city": "SAN DIEGO",
-            "address": "3545 DEL MAR HEIGHTS RD",
-            "status": "Permit Renewed"
-          },
-          "score": 36.7,
+          "score": 27.36,
           "rank": 12
-        },
-        {
-          "id": "einstein bros bagels 0893",
-          "name": "EINSTEIN BROS BAGELS #0893",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 3.9,
-            "review_count": 297,
-            "url": "https://maps.google.com/?cid=2952774808182542203&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "EINSTEIN BROS BAGELS #0893",
-            "kind": "bakery",
-            "city": "SAN DIEGO",
-            "address": "15721 BERNARDO HEIGHTS PKWY, SUITE# G",
-            "status": "Permit Renewed"
-          },
-          "score": 36.7,
-          "rank": 13
         },
         {
           "id": "navas bakery deli",
@@ -2966,8 +2902,8 @@
             "address": "635 W MISSION AVE 33-34",
             "status": "Permit Renewed"
           },
-          "score": 36.58,
-          "rank": 14
+          "score": 27.26,
+          "rank": 13
         },
         {
           "id": "einstein bros bagels 0884",
@@ -2994,36 +2930,8 @@
             "address": "374 E H ST, SUITE# 1701",
             "status": "Permit Renewed"
           },
-          "score": 36.4,
-          "rank": 15
-        },
-        {
-          "id": "einstein bros bagels 2309",
-          "name": "EINSTEIN BROS BAGELS #2309",
-          "neighborhood": "ENCINITAS",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 3.8,
-            "review_count": 263,
-            "url": "https://maps.google.com/?cid=5338056609374066638&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "EINSTEIN BROS BAGELS #2309",
-            "kind": "bakery",
-            "city": "ENCINITAS",
-            "address": "1006 N EL CAMINO REAL",
-            "status": "Permit Renewed"
-          },
-          "score": 36.4,
-          "rank": 16
+          "score": 27.12,
+          "rank": 14
         },
         {
           "id": "bread deluxe bakery etc",
@@ -3050,8 +2958,8 @@
             "address": "1420 PLAZA BLVD",
             "status": "Permit Renewed"
           },
-          "score": 35.31,
-          "rank": 17
+          "score": 26.25,
+          "rank": 15
         },
         {
           "id": "lambers bakery",
@@ -3078,7 +2986,63 @@
             "address": "1445 03RD AVE",
             "status": "Permit Renewed"
           },
-          "score": 35.29,
+          "score": 26.24,
+          "rank": 16
+        },
+        {
+          "id": "valerios city bakery",
+          "name": "VALERIOS CITY BAKERY",
+          "neighborhood": "NATIONAL CITY",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.2,
+            "review_count": 85,
+            "url": "https://maps.google.com/?cid=8566360550332955118&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": {
+            "name": "VALERIOS CITY BAKERY",
+            "kind": "bakery",
+            "city": "NATIONAL CITY",
+            "address": "1631 E 08TH ST",
+            "status": "Permit Renewed"
+          },
+          "score": 26.16,
+          "rank": 17
+        },
+        {
+          "id": "el trigal bakery",
+          "name": "EL TRIGAL BAKERY",
+          "neighborhood": "NATIONAL CITY",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": {
+            "rating": 4.8,
+            "review_count": 28,
+            "url": "https://maps.google.com/?cid=1525647428571343039&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+          },
+          "permit": {
+            "name": "EL TRIGAL BAKERY",
+            "kind": "bakery",
+            "city": "NATIONAL CITY",
+            "address": "319 N HIGHLAND AVE",
+            "status": "Permit Renewed"
+          },
+          "score": 25.14,
           "rank": 18
         },
         {
@@ -3095,9 +3059,9 @@
           ],
           "yelp": null,
           "google": {
-            "rating": 5,
-            "review_count": 1,
-            "url": "https://maps.google.com/?cid=2176344566622621669&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+            "rating": 4.3,
+            "review_count": 14,
+            "url": "https://maps.google.com/?cid=5330510789247149331&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
           },
           "permit": {
             "name": "BIG CITY BAGELS",
@@ -3106,324 +3070,8 @@
             "address": "1010 UNIVERSITY AVE, SUITE# 102",
             "status": "Permit Renewed"
           },
-          "score": 26.96,
+          "score": 22.45,
           "rank": 19
-        },
-        {
-          "id": "su pan bakery escondido",
-          "name": "SU PAN BAKERY ESCONDIDO",
-          "neighborhood": "ESCONDIDO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": {
-            "rating": 2.3,
-            "review_count": 3,
-            "url": "https://maps.google.com/?cid=7630793644911077195&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-          },
-          "permit": {
-            "name": "SU PAN BAKERY ESCONDIDO",
-            "kind": "bakery",
-            "city": "ESCONDIDO",
-            "address": "675 N BROADWAY, SUITE# D",
-            "status": "Permit Renewed"
-          },
-          "score": 20.82,
-          "rank": 20
-        },
-        {
-          "id": "einstein bros bagels 2442",
-          "name": "EINSTEIN BROS BAGELS #2442",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "EINSTEIN BROS BAGELS #2442",
-            "kind": "bakery",
-            "city": "SAN DIEGO",
-            "address": "3305 ROSECRANS ST",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 21
-        },
-        {
-          "id": "einstein bros bagels 0891",
-          "name": "EINSTEIN BROS BAGELS #0891",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "EINSTEIN BROS BAGELS #0891",
-            "kind": "bakery",
-            "city": "SAN DIEGO",
-            "address": "420 ROBINSON AVE, SUITE# B",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 22
-        },
-        {
-          "id": "valerios city bakery",
-          "name": "VALERIOS CITY BAKERY",
-          "neighborhood": "NATIONAL CITY",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "VALERIOS CITY BAKERY",
-            "kind": "bakery",
-            "city": "NATIONAL CITY",
-            "address": "1631 E 08TH ST",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 23
-        },
-        {
-          "id": "golden bagel",
-          "name": "GOLDEN BAGEL",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "GOLDEN BAGEL",
-            "kind": "bakery",
-            "city": "SAN DIEGO",
-            "address": "13289 BLACK MOUNTAIN RD",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 24
-        },
-        {
-          "id": "einstein bros bagels 3047",
-          "name": "EINSTEIN BROS BAGELS #3047",
-          "neighborhood": "OCEANSIDE",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "EINSTEIN BROS BAGELS #3047",
-            "kind": "bakery",
-            "city": "OCEANSIDE",
-            "address": "2183 VISTA WAY, SUITE# B-10",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 25
-        },
-        {
-          "id": "einstein bros bagels 3048",
-          "name": "EINSTEIN BROS BAGELS #3048",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "EINSTEIN BROS BAGELS #3048",
-            "kind": "bakery",
-            "city": "SAN DIEGO",
-            "address": "10460 FRIARS RD",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 26
-        },
-        {
-          "id": "donut touch bakery",
-          "name": "DONUT TOUCH BAKERY",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "DONUT TOUCH BAKERY",
-            "kind": "bakery",
-            "city": "SAN DIEGO",
-            "address": "6755 MIRA MESA BLVD",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 27
-        },
-        {
-          "id": "einstein bros bagels 2900",
-          "name": "EINSTEIN BROS BAGELS #2900",
-          "neighborhood": "LA JOLLA",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "EINSTEIN BROS BAGELS #2900",
-            "kind": "bakery",
-            "city": "LA JOLLA",
-            "address": "4150 REGENTS PARK ROW",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 28
-        },
-        {
-          "id": "el trigal bakery",
-          "name": "EL TRIGAL BAKERY",
-          "neighborhood": "NATIONAL CITY",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "EL TRIGAL BAKERY",
-            "kind": "bakery",
-            "city": "NATIONAL CITY",
-            "address": "319 N HIGHLAND AVE",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 29
-        },
-        {
-          "id": "busy bees bagels bakery",
-          "name": "BUSY BEES BAGELS & BAKERY",
-          "neighborhood": "LA JOLLA",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "BUSY BEES BAGELS & BAKERY",
-            "kind": "bakery",
-            "city": "LA JOLLA",
-            "address": "6861 LA JOLLA BLVD",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 30
-        },
-        {
-          "id": "panchitas bakery 4",
-          "name": "PANCHITAS BAKERY #4",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "PANCHITAS BAKERY #4",
-            "kind": "bakery",
-            "city": "SAN DIEGO",
-            "address": "4414 UNIVERSITY AVE",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 31
-        },
-        {
-          "id": "lucys bakery",
-          "name": "LUCYS BAKERY",
-          "neighborhood": "SAN DIEGO",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "LUCYS BAKERY",
-            "kind": "bakery",
-            "city": "SAN DIEGO",
-            "address": "31 31ST ST",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 32
         },
         {
           "id": "red ribbon bakeshop",
@@ -3446,8 +3094,8 @@
             "address": "8955 MIRA MESA BLVD",
             "status": "Permit Renewed"
           },
-          "score": 10.0,
-          "rank": 33
+          "score": 6.0,
+          "rank": 20
         },
         {
           "id": "tasty bakery",
@@ -3470,8 +3118,8 @@
             "address": "4344 CONVOY ST",
             "status": "Permit Renewed"
           },
-          "score": 10.0,
-          "rank": 34
+          "score": 6.0,
+          "rank": 21
         },
         {
           "id": "la concha bakery",
@@ -3494,8 +3142,8 @@
             "address": "334 E ST",
             "status": "Permit Renewed"
           },
-          "score": 10.0,
-          "rank": 35
+          "score": 6.0,
+          "rank": 22
         },
         {
           "id": "vg donut bakery inc",
@@ -3518,8 +3166,8 @@
             "address": "106 ABERDEEN DR",
             "status": "Permit Renewed"
           },
-          "score": 10.0,
-          "rank": 36
+          "score": 6.0,
+          "rank": 23
         },
         {
           "id": "honeys bistro bakery",
@@ -3542,32 +3190,8 @@
             "address": "632 S COAST HY 101",
             "status": "Permit Renewed"
           },
-          "score": 10.0,
-          "rank": 37
-        },
-        {
-          "id": "einstein bros bagels 3325",
-          "name": "EINSTEIN BROS BAGELS #3325",
-          "neighborhood": "SANTEE",
-          "blurb": "",
-          "month": null,
-          "sources": [
-            {
-              "name": "county_permit",
-              "url": null
-            }
-          ],
-          "yelp": null,
-          "google": null,
-          "permit": {
-            "name": "EINSTEIN BROS BAGELS #3325",
-            "kind": "bakery",
-            "city": "SANTEE",
-            "address": "9872 MISSION GORGE RD",
-            "status": "Permit Renewed"
-          },
-          "score": 10.0,
-          "rank": 38
+          "score": 6.0,
+          "rank": 24
         },
         {
           "id": "panera bread",
@@ -3590,8 +3214,8 @@
             "address": "1286 AUTO PARK WAY A",
             "status": "Permit Renewed"
           },
-          "score": 10.0,
-          "rank": 39
+          "score": 6.0,
+          "rank": 25
         },
         {
           "id": "denis bakery",
@@ -3614,7 +3238,343 @@
             "address": "2665 MARKET ST",
             "status": "Permit Renewed"
           },
-          "score": 10.0,
+          "score": 6.0,
+          "rank": 26
+        },
+        {
+          "id": "arelys french bakery",
+          "name": "ARELYS FRENCH BAKERY",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "ARELYS FRENCH BAKERY",
+            "kind": "bakery",
+            "city": "SAN DIEGO",
+            "address": "4961 CLAIREMONT DR",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 27
+        },
+        {
+          "id": "la moreliana bakery",
+          "name": "LA MORELIANA BAKERY",
+          "neighborhood": "CHULA VISTA",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "LA MORELIANA BAKERY",
+            "kind": "bakery",
+            "city": "CHULA VISTA",
+            "address": "275 QUINTARD ST",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 28
+        },
+        {
+          "id": "julies desserts bakery",
+          "name": "JULIES DESSERTS & BAKERY",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "JULIES DESSERTS & BAKERY",
+            "kind": "bakery",
+            "city": "SAN DIEGO",
+            "address": "10550 CAMINO RUIZ",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 29
+        },
+        {
+          "id": "huy ky bakery inc",
+          "name": "HUY KY BAKERY INC",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "HUY KY BAKERY INC",
+            "kind": "bakery",
+            "city": "SAN DIEGO",
+            "address": "4568 UNIVERSITY AVE",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 30
+        },
+        {
+          "id": "bakery corner",
+          "name": "BAKERY CORNER",
+          "neighborhood": "CHULA VISTA",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "BAKERY CORNER",
+            "kind": "bakery",
+            "city": "CHULA VISTA",
+            "address": "1001 THIRD AVE",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 31
+        },
+        {
+          "id": "bagatelle french bakery",
+          "name": "BAGATELLE FRENCH BAKERY",
+          "neighborhood": "SPRING VALLEY",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "BAGATELLE FRENCH BAKERY",
+            "kind": "bakery",
+            "city": "SPRING VALLEY",
+            "address": "9738 CAMPO RD",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 32
+        },
+        {
+          "id": "shakira pastry",
+          "name": "SHAKIRA PASTRY",
+          "neighborhood": "EL CAJON",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "SHAKIRA PASTRY",
+            "kind": "bakery",
+            "city": "EL CAJON",
+            "address": "1183 E MAIN ST",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 33
+        },
+        {
+          "id": "kababayan bakery",
+          "name": "KABABAYAN BAKERY",
+          "neighborhood": "SPRING VALLEY",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "KABABAYAN BAKERY",
+            "kind": "bakery",
+            "city": "SPRING VALLEY",
+            "address": "8423 PARADISE VALLEY RD",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 34
+        },
+        {
+          "id": "edelweiss bakery",
+          "name": "EDELWEISS BAKERY",
+          "neighborhood": "SAN DIEGO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "EDELWEISS BAKERY",
+            "kind": "bakery",
+            "city": "SAN DIEGO",
+            "address": "11639 DUENDA RD",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 35
+        },
+        {
+          "id": "goldilocks bakery restaurant",
+          "name": "GOLDILOCKS BAKERY & RESTAURANT",
+          "neighborhood": "NATIONAL CITY",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "GOLDILOCKS BAKERY & RESTAURANT",
+            "kind": "bakery",
+            "city": "NATIONAL CITY",
+            "address": "1420 E PLAZA BLVD, SUITE# D7",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 36
+        },
+        {
+          "id": "le rendez vous french bakery",
+          "name": "LE RENDEZ VOUS FRENCH BAKERY",
+          "neighborhood": "OCEANSIDE",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "LE RENDEZ VOUS FRENCH BAKERY",
+            "kind": "bakery",
+            "city": "OCEANSIDE",
+            "address": "4225 OCEANSIDE BLVD",
+            "status": "Expired"
+          },
+          "score": 6.0,
+          "rank": 37
+        },
+        {
+          "id": "evas bakery",
+          "name": "EVAS BAKERY",
+          "neighborhood": "SAN YSIDRO",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "EVAS BAKERY",
+            "kind": "bakery",
+            "city": "SAN YSIDRO",
+            "address": "4184 BEYER BLVD",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 38
+        },
+        {
+          "id": "san luis rey bakery restaurant",
+          "name": "SAN LUIS REY BAKERY & RESTAURANT",
+          "neighborhood": "OCEANSIDE",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "SAN LUIS REY BAKERY & RESTAURANT",
+            "kind": "bakery",
+            "city": "OCEANSIDE",
+            "address": "490 N EL CAMINO REAL",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
+          "rank": 39
+        },
+        {
+          "id": "ortiz bakery restaurant",
+          "name": "ORTIZ BAKERY & RESTAURANT",
+          "neighborhood": "VISTA",
+          "blurb": "",
+          "month": null,
+          "sources": [
+            {
+              "name": "county_permit",
+              "url": null
+            }
+          ],
+          "yelp": null,
+          "google": null,
+          "permit": {
+            "name": "ORTIZ BAKERY & RESTAURANT",
+            "kind": "bakery",
+            "city": "VISTA",
+            "address": "1275 S SANTA FE AVE",
+            "status": "Permit Renewed"
+          },
+          "score": 6.0,
           "rank": 40
         }
       ]

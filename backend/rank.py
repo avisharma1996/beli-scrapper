@@ -4,7 +4,7 @@ import re
 from concurrent.futures import ThreadPoolExecutor
 
 from . import google_client, yelp_client
-from .config import CATEGORIES, NEW_WINDOW_DAYS, OUTPUT_N
+from .config import CATEGORIES, MIN_RATING, NEW_WINDOW_DAYS, OUTPUT_N
 
 ENRICHMENT_WORKERS = 10
 
@@ -19,6 +19,31 @@ _PUNCT_RE = re.compile(r"[^a-z0-9 ]")
 _THE_RE = re.compile(r"\bthe\b")
 _WS_RE = re.compile(r"\s+")
 _PAREN_RE = re.compile(r"\(.*?\)")
+_TRAILING_DIGIT_TOKEN_RE = re.compile(r"\s+\S*\d\S*$")
+_CORP_SUFFIX_WORDS = {"llc", "inc", "co", "company", "corp", "corporation"}
+
+# Well-known multi-location chains -- if a (normalized) name contains one of
+# these as a whole word/phrase, it's used as the chain key directly instead
+# of the generic trailing-token stripping in chain_key(). Permit records
+# store a chain's brand in wildly inconsistent formats across locations
+# (bare "STARBUCKS", "STARBUCKS COFFEE COMPANY", "HILTON ... - STARBUCKS",
+# "PALOMAR ESCONDIDO STARBUCKS LLC", airport-terminal kiosks, ...) that no
+# generic suffix-stripping heuristic catches consistently. Not exhaustive --
+# a chain missing from this list still gets deduped by the generic
+# stripping below, just not across such wildly different naming formats.
+# Apostrophes are already stripped by normalize_name, so e.g. "mcdonald's"
+# is written here as "mcdonald s".
+KNOWN_CHAINS = (
+    "starbucks", "peets coffee", "dunkin", "dutch bros", "philz coffee",
+    "coffee bean and tea leaf", "jamba juice", "jamba", "panera bread",
+    "einstein bros", "noah s bagels", "corner bakery", "paris baguette",
+    "krispy kreme", "baskin robbins", "cold stone creamery",
+    "subway", "mcdonald s", "jack in the box", "chipotle", "panda express",
+    "jersey mike s", "jimmy john s", "wendy s", "taco bell", "kfc",
+    "popeyes", "chick fil a", "in n out", "del taco", "carl s jr",
+    "burger king", "pizza hut", "domino s", "little caesars", "wingstop",
+)
+_KNOWN_CHAIN_RES = [(brand, re.compile(rf"\b{re.escape(brand)}\b")) for brand in KNOWN_CHAINS]
 
 MONTH_NAMES = {
     "january": 1, "february": 2, "march": 3, "april": 4, "may": 5, "june": 6,
@@ -29,18 +54,24 @@ MONTH_NAMES = {
 # buzz/recency carry real weight. "top_rated" mode (coffee, bakeries): there's
 # no reliable newness signal for these, so that budget shifts entirely onto
 # rating/volume and permit becomes a small "verified licensed" trust bonus.
+# Rating + review-volume dominate both modes -- a high-volume-but-mediocre
+# place shouldn't be able to out-buzz or out-permit its way past genuinely
+# well-rated ones. MIN_RATING below is what actually keeps low-rated places
+# (e.g. 2.3 stars) off the list -- reweighting alone can't guarantee that
+# since a high review count can still offset a middling rating in a linear
+# score.
 WEIGHTS = {
     "new": {
-        "buzz": 20, "recency": 20,
-        "yelp_rating": 15, "yelp_volume": 15,
+        "buzz": 15, "recency": 15,
+        "yelp_rating": 20, "yelp_volume": 20,
         "google_rating": 10, "google_volume": 10,
         "permit": 10,
     },
     "top_rated": {
         "buzz": 0, "recency": 0,
-        "yelp_rating": 30, "yelp_volume": 30,
-        "google_rating": 15, "google_volume": 15,
-        "permit": 10,
+        "yelp_rating": 35, "yelp_volume": 35,
+        "google_rating": 12, "google_volume": 12,
+        "permit": 6,
     },
 }
 
@@ -51,6 +82,38 @@ def normalize_name(name: str) -> str:
     n = _PUNCT_RE.sub(" ", n)
     n = _THE_RE.sub(" ", n)
     return _WS_RE.sub(" ", n).strip()
+
+
+def chain_key(name: str) -> str:
+    """Groups different locations of the same chain together.
+
+    County permit records give each physical location its own row, with a
+    store/unit code baked into the name in whatever form that chain uses
+    ("STARBUCKS COFFEE #6783", "STARBUCKS COFFEE CO #19826",
+    "STARBUCKS COFFEE CO TERMINAL 2W-2038", "STARBUCKS COFFEE COMPANY", ...)
+    -- so without collapsing these, a single chain can fill most of a
+    category with near-duplicate entries. Repeatedly strips trailing
+    corporate-suffix words and trailing tokens that contain a digit (store
+    numbers, unit/terminal codes) until neither applies.
+    """
+    n = normalize_name(name)
+    for brand, pattern in _KNOWN_CHAIN_RES:
+        if pattern.search(n):
+            return brand
+    while True:
+        next_n = _TRAILING_DIGIT_TOKEN_RE.sub("", n)
+        words = next_n.split()
+        if words and words[-1] in _CORP_SUFFIX_WORDS:
+            words.pop()
+        next_n = " ".join(words)
+        if next_n == n:
+            return n
+        n = next_n
+
+
+def _best_rating(yelp: dict | None, google: dict | None) -> float | None:
+    ratings = [r for r in (yelp and yelp.get("rating"), google and google.get("rating")) if r is not None]
+    return max(ratings) if ratings else None
 
 
 def _parse_month_label(label: str | None) -> dt.date | None:
@@ -193,14 +256,36 @@ def build_ranking(category: str, raw_entries: list[dict], permit_lookup: dict[st
         entry["score"] = _score(mode, agg, yelp, None, permit)
         entries.append(entry)
 
-    # Spend Google calls only on the strongest candidates by Yelp-only score
+    # Drop clearly bad places outright -- a high review count can offset a
+    # middling rating in the weighted score, which would otherwise let e.g.
+    # a 2.3-star location still make a "top rated" list.
+    entries = [e for e in entries if (r := _best_rating(e["yelp"], None)) is None or r >= MIN_RATING]
+
+    # Cap each chain at its single best-scoring location (see chain_key) --
+    # do this before spending Google-enrichment budget so it isn't wasted on
+    # near-duplicate chain locations.
     entries.sort(key=lambda e: e["score"], reverse=True)
+    seen_chains: set[str] = set()
+    deduped = []
+    for e in entries:
+        ck = chain_key(e["name"])
+        if ck in seen_chains:
+            continue
+        seen_chains.add(ck)
+        deduped.append(e)
+    entries = deduped
+
+    # Spend Google calls only on the strongest candidates by Yelp-only score
     shortlist = entries[:GOOGLE_SHORTLIST_N]
     with ThreadPoolExecutor(max_workers=ENRICHMENT_WORKERS) as pool:
         google_results = list(pool.map(_fetch_google, shortlist))
     for entry, google in zip(shortlist, google_results):
         entry["google"] = google
         entry["score"] = _score(mode, entry["_agg"], entry["yelp"], google, entry["permit"])
+
+    # Re-check the floor now that Google data is in, in case a place had no
+    # Yelp rating but a bad Google one.
+    entries = [e for e in entries if (r := _best_rating(e["yelp"], e["google"])) is None or r >= MIN_RATING]
 
     for entry in entries:
         del entry["_agg"]
