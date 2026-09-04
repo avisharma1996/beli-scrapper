@@ -111,9 +111,12 @@ def chain_key(name: str) -> str:
         n = next_n
 
 
-def _best_rating(yelp: dict | None, google: dict | None) -> float | None:
-    ratings = [r for r in (yelp and yelp.get("rating"), google and google.get("rating")) if r is not None]
-    return max(ratings) if ratings else None
+def _passes_rating_floor(yelp: dict | None, google: dict | None) -> bool:
+    """False if either Yelp or Google (whichever are present) rates below MIN_RATING."""
+    for r in (yelp and yelp.get("rating"), google and google.get("rating")):
+        if r is not None and r < MIN_RATING:
+            return False
+    return True
 
 
 def _parse_month_label(label: str | None) -> dt.date | None:
@@ -259,7 +262,7 @@ def build_ranking(category: str, raw_entries: list[dict], permit_lookup: dict[st
     # Drop clearly bad places outright -- a high review count can offset a
     # middling rating in the weighted score, which would otherwise let e.g.
     # a 2.3-star location still make a "top rated" list.
-    entries = [e for e in entries if (r := _best_rating(e["yelp"], None)) is None or r >= MIN_RATING]
+    entries = [e for e in entries if _passes_rating_floor(e["yelp"], None)]
 
     # Cap each chain at its single best-scoring location (see chain_key) --
     # do this before spending Google-enrichment budget so it isn't wasted on
@@ -285,7 +288,7 @@ def build_ranking(category: str, raw_entries: list[dict], permit_lookup: dict[st
 
     # Re-check the floor now that Google data is in, in case a place had no
     # Yelp rating but a bad Google one.
-    entries = [e for e in entries if (r := _best_rating(e["yelp"], e["google"])) is None or r >= MIN_RATING]
+    entries = [e for e in entries if _passes_rating_floor(e["yelp"], e["google"])]
 
     for entry in entries:
         del entry["_agg"]
