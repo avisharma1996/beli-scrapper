@@ -111,12 +111,18 @@ def chain_key(name: str) -> str:
         n = next_n
 
 
-def _passes_rating_floor(yelp: dict | None, google: dict | None) -> bool:
-    """False if either Yelp or Google (whichever are present) rates below MIN_RATING."""
-    for r in (yelp and yelp.get("rating"), google and google.get("rating")):
-        if r is not None and r < MIN_RATING:
-            return False
-    return True
+def _passes_rating_floor(yelp: dict | None, google: dict | None, require_rating: bool = False) -> bool:
+    """False if any present rating (Yelp/Google) is below MIN_RATING.
+
+    With require_rating=True, also false if neither platform rated it at
+    all -- otherwise a place nobody has ever rated (no bad rating on record,
+    but no good one either) could still backfill the list once genuinely
+    well-rated candidates run out.
+    """
+    ratings = [r for r in (yelp and yelp.get("rating"), google and google.get("rating")) if r is not None]
+    if not ratings:
+        return not require_rating
+    return all(r >= MIN_RATING for r in ratings)
 
 
 def _parse_month_label(label: str | None) -> dt.date | None:
@@ -288,7 +294,7 @@ def build_ranking(category: str, raw_entries: list[dict], permit_lookup: dict[st
 
     # Re-check the floor now that Google data is in, in case a place had no
     # Yelp rating but a bad Google one.
-    entries = [e for e in entries if _passes_rating_floor(e["yelp"], e["google"])]
+    entries = [e for e in entries if _passes_rating_floor(e["yelp"], e["google"], require_rating=True)]
 
     for entry in entries:
         del entry["_agg"]
