@@ -385,3 +385,13 @@ main {
 .site-footer a {
   color: var(--text-muted);
 }
+
+/* Rules above set `display` unconditionally on elements (.toast,
+   .restaurant-list, .sync-panel, ...) that are also toggled via the
+   `hidden` attribute. Author styles beat the UA [hidden] rule regardless
+   of selector specificity, so without this the elements never actually
+   disappear -- this re-asserts display:none, and wins ties by coming
+   last in the file. */
+[hidden] {
+  display: none;
+}
