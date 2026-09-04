@@ -34,6 +34,19 @@ MIN_RATING = 4.0
 # reused across runs instead of re-querying every business every week.
 YELP_CACHE_TTL_DAYS = 30
 
+# When most fresh Yelp lookups this run failed (rate limited, outage), the
+# usual Yelp-only pre-sort that picks GOOGLE_SHORTLIST_N (see rank.py) is
+# meaningless -- every candidate ties at ~the same score, so the "top 20" is
+# really an arbitrary 20. GOOGLE_SHORTLIST_FALLBACK_N widens (and
+# randomizes -- see build_ranking) the shortlist in that case so Google
+# still sees a reasonable slice of the pool. Kept modest and NOT "enrich
+# everyone": Google's own documented free allowance here is only ~1,000
+# calls/month, and this can fire on every automated weekly run for as long
+# as Yelp stays down, so it needs to stay affordable across multiple runs,
+# not just one.
+GOOGLE_SHORTLIST_FALLBACK_N = 40
+YELP_FAILURE_FALLBACK_THRESHOLD = 0.5  # fraction of fresh Yelp lookups that must fail to trigger the above
+
 # The county's active-restaurant permit pool alone runs ~3,800+ candidates --
 # enriching all of them via Yelp/Google every run isn't practical. Cap how
 # many get sampled per "top_rated" kind each run (random sample, not a fixed

@@ -1,10 +1,19 @@
 import datetime as dt
 import math
+import random
 import re
 from concurrent.futures import ThreadPoolExecutor
 
 from . import google_client, yelp_cache, yelp_client
-from .config import CATEGORIES, MIN_RATING, NEW_WINDOW_DAYS, OUTPUT_N, YELP_API_KEY
+from .config import (
+    CATEGORIES,
+    GOOGLE_SHORTLIST_FALLBACK_N,
+    MIN_RATING,
+    NEW_WINDOW_DAYS,
+    OUTPUT_N,
+    YELP_API_KEY,
+    YELP_FAILURE_FALLBACK_THRESHOLD,
+)
 
 ENRICHMENT_WORKERS = 10
 
@@ -230,11 +239,18 @@ def _fetch_yelp(item: tuple[str, dict], yelp_category: str) -> tuple[str, dict, 
         return key, agg, None, False
 
 
-def _fetch_all_yelp(merged: dict[str, dict], yelp_category: str) -> list[tuple[str, dict, dict | None]]:
+def _fetch_all_yelp(merged: dict[str, dict], yelp_category: str) -> tuple[list[tuple[str, dict, dict | None]], float]:
     """Yelp-enriches every merged candidate, reusing cached results (see
     yelp_cache) instead of re-querying businesses already looked up within
     YELP_CACHE_TTL_DAYS -- Yelp's free tier is a modest monthly call budget,
-    not unlimited, and a full run can have thousands of candidates."""
+    not unlimited, and a full run can have thousands of candidates.
+
+    Also returns the fraction of *fresh* lookups (cache misses) that failed
+    outright (rate limited, network error) rather than genuinely finding no
+    match -- callers use this to detect "Yelp is down this run" and widen
+    the Google shortlist accordingly (see build_ranking). Cache hits aren't
+    counted since they don't reflect Yelp's current availability.
+    """
     cache = yelp_cache.load()
     results: list[tuple[str, dict, dict | None]] = []
     to_fetch: list[tuple[str, dict]] = []
@@ -245,17 +261,22 @@ def _fetch_all_yelp(merged: dict[str, dict], yelp_category: str) -> list[tuple[s
         else:
             results.append((key, agg, cached))
 
+    failure_rate = 0.0
     if to_fetch:
         with ThreadPoolExecutor(max_workers=ENRICHMENT_WORKERS) as pool:
             fetched = list(pool.map(lambda item: _fetch_yelp(item, yelp_category), to_fetch))
+        failures = 0
         for key, agg, yelp, ok in fetched:
             if ok and YELP_API_KEY:
                 yelp_cache.set(cache, key, yelp)
+            if not ok:
+                failures += 1
             results.append((key, agg, yelp))
+        failure_rate = failures / len(fetched)
         if YELP_API_KEY:
             yelp_cache.save(cache)
 
-    return results
+    return results, failure_rate
 
 
 def _fetch_google(entry: dict) -> dict | None:
@@ -277,7 +298,7 @@ def build_ranking(category: str, raw_entries: list[dict], permit_lookup: dict[st
             if _within_new_window(_parse_month_label(v["months"][0] if v["months"] else None))
         }
 
-    yelp_results = _fetch_all_yelp(merged, yelp_category)
+    yelp_results, yelp_failure_rate = _fetch_all_yelp(merged, yelp_category)
 
     entries = []
     for key, agg, yelp in yelp_results:
@@ -319,8 +340,18 @@ def build_ranking(category: str, raw_entries: list[dict], permit_lookup: dict[st
         deduped.append(e)
     entries = deduped
 
-    # Spend Google calls only on the strongest candidates by Yelp-only score
-    shortlist = entries[:GOOGLE_SHORTLIST_N]
+    # Spend Google calls on the strongest candidates by Yelp-only score --
+    # unless Yelp itself was largely unavailable this run, in which case
+    # that pre-sort is meaningless (every candidate ties at ~the same
+    # score), so fall back to a wider, randomized sample instead of an
+    # arbitrary fixed-order slice. See GOOGLE_SHORTLIST_FALLBACK_N in
+    # config.py for why this stays modest rather than "enrich everyone".
+    if yelp_failure_rate >= YELP_FAILURE_FALLBACK_THRESHOLD:
+        pool_for_shortlist = entries[:]
+        random.shuffle(pool_for_shortlist)
+        shortlist = pool_for_shortlist[:GOOGLE_SHORTLIST_FALLBACK_N]
+    else:
+        shortlist = entries[:GOOGLE_SHORTLIST_N]
     with ThreadPoolExecutor(max_workers=ENRICHMENT_WORKERS) as pool:
         google_results = list(pool.map(_fetch_google, shortlist))
     for entry, google in zip(shortlist, google_results):
